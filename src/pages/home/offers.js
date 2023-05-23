@@ -20,262 +20,263 @@ const Offers = () => {
     const [SliderReferencebus, setSliderReferencebus] = useState(null)
     const [SliderReferencecar, setSliderReferencecar] = useState(null)
 
-   const sliderSettings = {
-        
+    const sliderSettings = {
+
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        lazyLoad: true, 
+        lazyLoad: true,
         responsive: [
             {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
             },
             {
                 breakpoint: 820,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  initialSlide: 2
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
                 }
-              },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
             },
             {
-              breakpoint: 450,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-          ]
+        ]
     }
 
     return (
         <>
             <Card className="container hojoyoffers-Label cardrad">
-                <Card.Header className="bg-white ">
-
+                <p className="fw-bold text-center mt-3">Offers For You</p>
+                <Card.Header className="">
                     <Row className="text-end">
-                        <Col xs={7}>
-                            <p className="fw-bold">Offers For You</p>
+                        <Col >
+                            {/* <p className="fw-bold">Offers For You</p> */}
+                            <Row>
+                                <Tabs className="text-primary">
+                                    <Tab eventKey="Bankoffer" title="All Offer" className="dealsTab">
+                                        <Row>
+                                            <Col className="my-auto">
+                                                <Button variant="light" size="lg" onClick={SliderReference?.slickPrev} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                                                </Button>
+                                            </Col>
+                                            <Col xs={11} className="HojoyBankoffersmedia">
+                                                <div className="HojoyBankoffers mt-3">
+                                                    <Slider ref={setSliderReference} {...sliderSettings}>
+                                                        {BankOfferDetails.map((card, index) => (
+                                                            <Card className="OFFERS-CARD">
+                                                                <Row className="offerscard">
+                                                                    <Col xs={5} className="bannerimage">
+                                                                        <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
+                                                                    </Col>
+                                                                    <Col className="flex-3">
+                                                                        <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
+                                                                        <h4 className="fw-bold">{card.offer}</h4>
+                                                                        <h6 className="text-danger fw-bold">{card.valid}</h6>
+                                                                    </Col>
+                                                                </Row>
+                                                                <Row className="mt-5">
+                                                                    <Button variant="light" className="text-primary fw-bold cardbtn" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
+                                                                </Row>
+                                                            </Card>
+                                                        ))}
+                                                    </Slider>
+                                                </div>
+                                            </Col>
+                                            <Col className="my-auto rightcoldeals ">
+                                                <Button variant="light" size="lg" onClick={SliderReference?.slickNext} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowRightLong} />
+                                                </Button>
+                                            </Col>
+                                        </Row>
+
+                                    </Tab>
+                                    <Tab eventKey="Flight" title="Flight" className="dealsTab">
+                                        <Row>
+                                            <Col className="my-auto">
+                                                <Button variant="light" size="lg" onClick={SliderReferenceflight?.slickPrev} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                                                </Button>
+                                            </Col>
+                                            <Col xs={11}>
+                                                <div className="HojoyBankoffers mt-3">
+                                                    <Slider ref={setSliderReferenceflight} {...sliderSettings}>
+                                                        {FlightOfferDetails.map((card, index) => (
+                                                            <Card className="OFFERS-CARD">
+                                                                <Row>
+                                                                    <Col xs={5} className="bannerimage">
+                                                                        <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
+                                                                    </Col>
+                                                                    <Col className="flex-3">
+
+                                                                        <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
+                                                                        <h4 className="fw-bold">{card.offer}</h4>
+                                                                        <h6 className="text-danger fw-bold">{card.valid}</h6>
+                                                                    </Col>
+                                                                </Row>
+                                                                <Row className="mt-5">
+                                                                    <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
+                                                                </Row>
+                                                            </Card>
+                                                        ))}
+                                                    </Slider>
+                                                </div>
+                                            </Col>
+                                            <Col className="my-auto rightcoldeals ">
+                                                <Button variant="light" size="lg" onClick={SliderReferenceflight?.slickNext} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowRightLong} />
+                                                </Button>
+                                            </Col>
+                                        </Row>
+
+                                    </Tab>
+                                    <Tab eventKey="Hotel" title="Hotel" className="dealsTab">
+                                        <Row>
+                                            <Col className="my-auto">
+                                                <Button variant="light" size="lg" onClick={SliderReferencehotel?.slickPrev} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                                                </Button>
+                                            </Col>
+                                            <Col xs={11}>
+                                                <div className="HojoyBankoffers mt-3">
+                                                    <Slider ref={setSliderReferencehotel} {...sliderSettings}>
+                                                        {HotelOfferDetails.map((card, index) => (
+                                                            <Card className="OFFERS-CARD">
+                                                                <Row>
+                                                                    <Col xs={5} className="bannerimage">
+                                                                        <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
+                                                                    </Col>
+                                                                    <Col className="flex-3">
+
+                                                                        <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
+                                                                        <h4 className="fw-bold">{card.offer}</h4>
+                                                                        <h6 className="text-danger fw-bold">{card.valid}</h6>
+                                                                    </Col>
+                                                                </Row>
+                                                                <Row className="mt-5">
+                                                                    <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
+                                                                </Row>
+                                                            </Card>
+                                                        ))}
+                                                    </Slider>
+                                                </div>
+                                            </Col>
+                                            <Col className="my-auto rightcoldeals ">
+                                                <Button variant="light" size="lg" onClick={SliderReferencehotel?.slickNext} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowRightLong} />
+                                                </Button>
+                                            </Col>
+                                        </Row>
+
+                                    </Tab>
+                                    <Tab eventKey="Car" title="Car" className="dealsTab">
+                                        <Row>
+                                            <Col className="my-auto">
+                                                <Button variant="light" size="lg" onClick={SliderReferencecar?.slickPrev} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                                                </Button>
+                                            </Col>
+                                            <Col xs={11}>
+                                                <div className="HojoyBankoffers mt-3">
+                                                    <Slider ref={setSliderReferencecar} {...sliderSettings}>
+                                                        {CarOfferDetails.map((card, index) => (
+                                                            <Card className="OFFERS-CARD">
+                                                                <Row>
+                                                                    <Col xs={5} className="bannerimage">
+                                                                        <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
+                                                                    </Col>
+                                                                    <Col className="flex-3">
+
+                                                                        <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
+                                                                        <h4 className="fw-bold">{card.offer}</h4>
+                                                                        <h6 className="text-danger fw-bold">{card.valid}</h6>
+                                                                    </Col>
+                                                                </Row>
+                                                                <Row className="mt-5">
+                                                                    <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
+                                                                </Row>
+                                                            </Card>
+                                                        ))}
+                                                    </Slider>
+                                                </div>
+                                            </Col>
+                                            <Col className="my-auto rightcoldeals ">
+                                                <Button variant="light" size="lg" onClick={SliderReferencecar?.slickNext} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowRightLong} />
+                                                </Button>
+                                            </Col>
+                                        </Row>
+
+                                    </Tab>
+                                    <Tab eventKey="Bus" title="Bus" className="dealsTab">
+                                        <Row>
+                                            <Col className="my-auto">
+                                                <Button variant="light" size="lg" onClick={SliderReferencebus?.slickPrev} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                                                </Button>
+                                            </Col>
+                                            <Col xs={11}>
+                                                <div className="HojoyBankoffers mt-3">
+                                                    <Slider ref={setSliderReferencebus} {...sliderSettings}>
+                                                        {BusOfferDetails.map((card, index) => (
+                                                            <Card className="OFFERS-CARD">
+                                                                <Row>
+                                                                    <Col xs={5} className="bannerimage">
+                                                                        <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
+                                                                    </Col>
+                                                                    <Col className="flex-3">
+
+                                                                        <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
+                                                                        <h4 className="fw-bold">{card.offer}</h4>
+                                                                        <h6 className="text-danger fw-bold">{card.valid}</h6>
+                                                                    </Col>
+                                                                </Row>
+                                                                <Row className="mt-5">
+                                                                    <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
+                                                                </Row>
+                                                            </Card>
+                                                        ))}
+                                                    </Slider>
+                                                </div>
+                                            </Col>
+                                            <Col className="my-auto rightcoldeals ">
+                                                <Button variant="light" size="lg" onClick={SliderReferencebus?.slickNext} className="slidebutton rounded-circle">
+                                                    <FontAwesomeIcon icon={faArrowRightLong} />
+                                                </Button>
+                                            </Col>
+                                        </Row>
+
+                                    </Tab>
+                                </Tabs>
+                            </Row>
                         </Col>
                         <Col className="mt-2">
-                            <Button variant="light" className="text-primary fw-bold p-0" >See All Offers <FontAwesomeIcon icon={faAngleRight} /></Button>
+                            <Button variant="light" className="text-primary fw-bold p-0 my-3" >See All Offers <FontAwesomeIcon icon={faAngleRight} /></Button>
                         </Col>
                     </Row>
                 </Card.Header>
                 <Card.Body >
-                    <Row>
-                        <Tabs className="text-primary">
-                            <Tab eventKey="Bankoffer" title="All Offer" className="dealsTab">
-                                <Row>
-                                    <Col className="my-auto">
-                                        <Button variant="light" size="lg" onClick={SliderReference?.slickPrev} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowLeftLong} />
-                                        </Button>
-                                    </Col>
-                                    <Col xs={11} className="HojoyBankoffersmedia">
-                                        <div className="HojoyBankoffers mt-3">
-                                            <Slider ref={setSliderReference} {...sliderSettings}>
-                                                {BankOfferDetails.map((card, index) => (
-                                                    <Card className="OFFERS-CARD">
-                                                        <Row className="offerscard">
-                                                            <Col xs={5} className="bannerimage">
-                                                                <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
-                                                            </Col>
-                                                            <Col className="flex-3">
-                                                                <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
-                                                                <h4 className="fw-bold">{card.offer}</h4>
-                                                                <h6 className="text-danger fw-bold">{card.valid}</h6>
-                                                            </Col>
-                                                        </Row>
-                                                        <Row className="mt-5">
-                                                            <Button variant="light" className="text-primary fw-bold cardbtn" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
-                                                        </Row>
-                                                    </Card>
-                                                ))}
-                                            </Slider>
-                                        </div>
-                                    </Col>
-                                    <Col className="my-auto rightcoldeals ">
-                                        <Button variant="light" size="lg" onClick={SliderReference?.slickNext} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowRightLong} />
-                                        </Button>
-                                    </Col>
-                                </Row>
 
-                            </Tab>
-                            <Tab eventKey="Flight" title="Flight" className="dealsTab">
-                                <Row>
-                                    <Col className="my-auto">
-                                        <Button variant="light" size="lg" onClick={SliderReferenceflight?.slickPrev} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowLeftLong} />
-                                        </Button>
-                                    </Col>
-                                    <Col xs={11}>
-                                        <div className="HojoyBankoffers mt-3">
-                                            <Slider ref={setSliderReferenceflight} {...sliderSettings}>
-                                                {FlightOfferDetails.map((card, index) => (
-                                                    <Card className="OFFERS-CARD">
-                                                        <Row>
-                                                            <Col xs={5} className="bannerimage">
-                                                                <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
-                                                            </Col>
-                                                            <Col className="flex-3">
-
-                                                                <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
-                                                                <h4 className="fw-bold">{card.offer}</h4>
-                                                                <h6 className="text-danger fw-bold">{card.valid}</h6>
-                                                            </Col>
-                                                        </Row>
-                                                        <Row className="mt-5">
-                                                            <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
-                                                        </Row>
-                                                    </Card>
-                                                ))}
-                                            </Slider>
-                                        </div>
-                                    </Col>
-                                    <Col className="my-auto rightcoldeals ">
-                                        <Button variant="light" size="lg" onClick={SliderReferenceflight?.slickNext} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowRightLong} />
-                                        </Button>
-                                    </Col>
-                                </Row>
-
-                            </Tab>
-                            <Tab eventKey="Hotel" title="Hotel" className="dealsTab">
-                                <Row>
-                                    <Col className="my-auto">
-                                        <Button variant="light" size="lg" onClick={SliderReferencehotel?.slickPrev} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowLeftLong} />
-                                        </Button>
-                                    </Col>
-                                    <Col xs={11}>
-                                        <div className="HojoyBankoffers mt-3">
-                                            <Slider ref={setSliderReferencehotel} {...sliderSettings}>
-                                                {HotelOfferDetails.map((card, index) => (
-                                                    <Card className="OFFERS-CARD">
-                                                        <Row>
-                                                            <Col xs={5} className="bannerimage">
-                                                                <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
-                                                            </Col>
-                                                            <Col className="flex-3">
-
-                                                                <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
-                                                                <h4 className="fw-bold">{card.offer}</h4>
-                                                                <h6 className="text-danger fw-bold">{card.valid}</h6>
-                                                            </Col>
-                                                        </Row>
-                                                        <Row className="mt-5">
-                                                            <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
-                                                        </Row>
-                                                    </Card>
-                                                ))}
-                                            </Slider>
-                                        </div>
-                                    </Col>
-                                    <Col className="my-auto rightcoldeals ">
-                                        <Button variant="light" size="lg" onClick={SliderReferencehotel?.slickNext} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowRightLong} />
-                                        </Button>
-                                    </Col>
-                                </Row>
-
-                            </Tab>
-                            <Tab eventKey="Car" title="Car" className="dealsTab">
-                                <Row>
-                                    <Col className="my-auto">
-                                        <Button variant="light" size="lg" onClick={SliderReferencecar?.slickPrev} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowLeftLong} />
-                                        </Button>
-                                    </Col>
-                                    <Col xs={11}>
-                                        <div className="HojoyBankoffers mt-3">
-                                            <Slider ref={setSliderReferencecar} {...sliderSettings}>
-                                                {CarOfferDetails.map((card, index) => (
-                                                    <Card className="OFFERS-CARD">
-                                                        <Row>
-                                                            <Col xs={5} className="bannerimage">
-                                                                <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
-                                                            </Col>
-                                                            <Col className="flex-3">
-
-                                                                <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
-                                                                <h4 className="fw-bold">{card.offer}</h4>
-                                                                <h6 className="text-danger fw-bold">{card.valid}</h6>
-                                                            </Col>
-                                                        </Row>
-                                                        <Row className="mt-5">
-                                                            <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
-                                                        </Row>
-                                                    </Card>
-                                                ))}
-                                            </Slider>
-                                        </div>
-                                    </Col>
-                                    <Col className="my-auto rightcoldeals ">
-                                        <Button variant="light" size="lg" onClick={SliderReferencecar?.slickNext} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowRightLong} />
-                                        </Button>
-                                    </Col>
-                                </Row>
-
-                            </Tab>
-                            <Tab eventKey="Bus" title="Bus" className="dealsTab">
-                                <Row>
-                                    <Col className="my-auto">
-                                        <Button variant="light" size="lg" onClick={SliderReferencebus?.slickPrev} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowLeftLong} />
-                                        </Button>
-                                    </Col>
-                                    <Col xs={11}>
-                                        <div className="HojoyBankoffers mt-3">
-                                            <Slider ref={setSliderReferencebus} {...sliderSettings}>
-                                                {BusOfferDetails.map((card, index) => (
-                                                    <Card className="OFFERS-CARD">
-                                                        <Row>
-                                                            <Col xs={5} className="bannerimage">
-                                                                <img src={card.Banner} alt="img1" className="bannerimage" width={130} height={130}></img>
-                                                            </Col>
-                                                            <Col className="flex-3">
-
-                                                                <h4 className="text-muted fw-bold mt-2 pb-3">{card.Description}</h4>
-                                                                <h4 className="fw-bold">{card.offer}</h4>
-                                                                <h6 className="text-danger fw-bold">{card.valid}</h6>
-                                                            </Col>
-                                                        </Row>
-                                                        <Row className="mt-5">
-                                                            <Button variant="light" className="text-primary fw-bold" >View More Details <FontAwesomeIcon icon={faAngleRight} /></Button>
-                                                        </Row>
-                                                    </Card>
-                                                ))}
-                                            </Slider>
-                                        </div>
-                                    </Col>
-                                    <Col className="my-auto rightcoldeals ">
-                                        <Button variant="light" size="lg" onClick={SliderReferencebus?.slickNext} className="slidebutton rounded-circle">
-                                            <FontAwesomeIcon icon={faArrowRightLong} />
-                                        </Button>
-                                    </Col>
-                                </Row>
-
-                            </Tab>
-                        </Tabs>
-                    </Row>
 
 
                 </Card.Body>

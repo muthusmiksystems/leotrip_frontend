@@ -12,7 +12,7 @@
     // position: absolute;
     padding-top: 30px;
     width: 100%;
-    margin-top: 63px;
+    margin-top: 66px;
   }
 
 
@@ -21,9 +21,9 @@
     font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: bold;
     font-size: 24px;
+    line-height: 30px;
     font-weight: 700;
-    // margin: 19px 0;
-    margin-bottom: 18px;
+    margin: 30px 0px 20px 0px;
     letter-spacing: 1px;
 
   }
@@ -45,8 +45,8 @@
 }
 
 .hotelsearchbox {
-  width: 200px;
-  border: 2.5px solid #dfdfdf;
+  width: 260px;
+  border: 2.5px solid #dfdfdf;//#dfdfdf
   border-radius: 8px;
   height: 60px;
   background: rgb(255, 255, 255);
@@ -117,10 +117,10 @@
 
 .daterange {
   height: 60px;
-  width: 200px;
+  width: 170px;
   margin: 0px 18px 0px 0px;
   border-radius: 8px;
-  border: 2.5px solid #dfdfdf;
+  border: 2.5px solid #dfdfdf;//#dfdfdf
   cursor: pointer;
   color: #625f5f;
   font-size: 17px;
@@ -144,9 +144,9 @@
 }
 
 .guestoption {
-  width: 230px;
+  width: 250px;
   height: 60px;
-  border: 2.5px solid #dfdfdf;
+  border: 2.5px solid #dfdfdf;//#dfdfdf
   border-radius: 8px;
   margin-left: 10px !important;
 
@@ -183,7 +183,7 @@
 .modiguestoption {
   width: 250px;
   height: 50px;
-  border: 2.5px solid #dfdfdf;
+  border: 2.5px solid #dfdfdf;//#dfdfdf
   border-radius: 8px;
   margin-left: 12px;
 
@@ -530,7 +530,7 @@
   .guestoption {
     width: 212px;
     height: 60px;
-    border: 2.5px solid #dfdfdf;
+    border: 2.5px solid #dfdfdf;//#dfdfdf
     border-radius: 8px;
     margin-left: -47px !important;
 

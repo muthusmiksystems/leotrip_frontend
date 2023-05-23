@@ -140,7 +140,7 @@ const Bus = () => {
                         <CustomNavbar />
                         <div className="headImage">
                             <div className="container">
-                                <h2 className="text-white text-center mt-5">Bus Ticket Booking</h2>
+                                <h2 className="text-white text-center">Bus Ticket Booking</h2>
                                 <div className='bussearchcontainer mt-0 mx-auto'>
 
                                         <h6 className="text-success fw-bold h5">Book Your Tickets With Best Deals</h6>

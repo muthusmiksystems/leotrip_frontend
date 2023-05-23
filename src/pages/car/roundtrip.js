@@ -221,9 +221,9 @@ const RoundTrip = () => {
 
             <div className='d-inline-flex  flightcontent mt-5 my-4'>
                 <div>
-                    <div className='roundcarsearchbox border-bottom border-2 mt-2'>
+                    <div className='roundcarsearchbox mt-2'>
 
-                        <p>From</p>
+                        <p className="bg-white px-2">From</p>
                         {/* <LocalSearch
                 value={fromaddress}
                 onChange={(e) => FromAddress(e)}
@@ -259,11 +259,11 @@ const RoundTrip = () => {
                         </div>
                     </div>
                 </div>
-                <div className='icon d-flex justify-content-center my-4 carRoundTrip_icon'>
+                <div className='icon d-flex justify-content-center carRoundTrip_icon'>
                     <FontAwesomeIcon icon={faArrowRightArrowLeft} onClick={() => switchText(from, to)} style={{ fontSize: "20px", color: "green" }} />
                 </div>
-                <div className='roundcarsearchbox border-bottom border-2 mt-2'>
-                    <p className="w-auto ">To</p>
+                <div className='roundcarsearchbox mt-2'>
+                    <p className="bg-white px-2">To</p>
                     {/* <LocalSearch
             value={toaddress}
             onChange={(e) => ToAddress(e)}
@@ -301,7 +301,7 @@ const RoundTrip = () => {
                     </div>
                 </div>
                 <div className='rounddateselections mt-2'>
-                    <p>Pickup Date</p>
+                    <p className="bg-white px-2">Pickup Date</p>
                     <CustomDatePickers
                         value={date}
                         Searchstyle="car_searchdate"
@@ -326,8 +326,8 @@ const RoundTrip = () => {
                 </div> */}
 
 
-                <div className='rounddateselections mt-2 me-5'>
-                    <p>Return Date</p>
+                <div className='rounddateselections mt-2' id="dateboxright">
+                    <p className="bg-white px-2">Return Date</p>
                     <CustomDatePickers
                         value={returndate}
                         Searchstyle="car_searchdate"
@@ -349,7 +349,7 @@ const RoundTrip = () => {
                     />
                 </div> */}
             </div>
-            <div className='carbutton'>
+            <div className='carbutton me-5' id="carbutton2">
                 <CustomButton customstyle='carbtnsearch' onClick={() => { handleSubmit(date,returndate) }} value='SEARCH CAR'></CustomButton>
             </div>
         </div>

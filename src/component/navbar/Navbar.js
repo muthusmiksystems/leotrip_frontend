@@ -72,7 +72,7 @@ const CustomNavbar = ({ isSticky,onhandle }) => {
     <div className={`navbar-wrapper ${isSticky || ''}`}>
       <Navbar expand="lg" className={colorChange ? 'custom-navbarchange' : 'custom-navbar'}>
         <Navbar.Brand href="/flight">
-          <img src={Logo} alt="logo" />
+          <img src={Logo} alt="logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

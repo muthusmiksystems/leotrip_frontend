@@ -1,6 +1,6 @@
 .homecontent {
   min-height: 1550px;
-  font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
@@ -11,7 +11,7 @@
   border-radius: 14px;
   background: #ffffff;
 
-  h1{
+  h1 {
     font-weight: 700;
     font-size: 26px;
   }
@@ -22,26 +22,26 @@
   }
 
   .flight-deals {
-   
-    // background: rgba(255, 255, 255, 0.90);
-    text-align: center;
-    overflow: hidden;
-    height: 250px;
-    width: 440px;
-   
-  }
-
-  .hotel-deals{
 
     // background: rgba(255, 255, 255, 0.90);
     text-align: center;
     overflow: hidden;
     height: 250px;
     width: 440px;
-  
+
   }
 
-  .HOJOYBANNERS{
+  .hotel-deals {
+
+    // background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    overflow: hidden;
+    height: 250px;
+    width: 440px;
+
+  }
+
+  .HOJOYBANNERS {
     // border: 2px solid gray;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.90);
@@ -61,21 +61,21 @@
 
 
 
-    h2{
+    h2 {
       font-size: 22px;
-      font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-family: QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-weight: 700;
     }
 
-    h5{
+    h5 {
       color: rgb(169, 21, 169);
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       font-weight: 700;
     }
 
   }
 
-  .information{
+  .information {
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -95,13 +95,13 @@
   .flight-deals img {
     width: 105%;
     height: 350px;
-    border-top-right-radius:12px ;
+    border-top-right-radius: 12px;
   }
 
   .hotel-deals img {
     width: 105%;
     height: 250px;
-    border-top-right-radius:12px ;
+    border-top-right-radius: 12px;
   }
 
   .info {
@@ -146,16 +146,16 @@
   }
 
 
-} 
+}
 
-.nearbyhotels{
+.nearbyhotels {
 
   margin-top: 50px;
 
-  h5{
+  h5 {
     font-weight: 700;
     font-size: 26px;
-    font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 }
 
@@ -168,186 +168,190 @@
   background-color: white;
   min-height: 450px;
 
-h1{
-     font-size: 26px;
-      font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-weight: 700;
-      color:#152030;
-}
+  h1 {
+    font-size: 26px;
+    font-family: QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #152030;
+  }
+
   .container-fluid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
-      width: 250px;
-      height: 350px;
-      margin: 10px;
-      background-color: rgba(255, 255, 255, 0.877);
-      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.877);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      .card__caption {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .card__image {
+        height: 100%;
+        width: 100%;
+        transform: translateY(-10px);
+      }
+
+
+      .card__thumb {
+        &::after {
+          top: 0;
+        }
+      }
+
+      .card__snippet {
+        margin: 20px 0;
+      }
+    }
+
+    &__thumb {
+      position: relative;
+      max-height: 400px;
+      overflow: hidden;
+
+
+
+      &::after {
+        position: absolute;
+        top: 0;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
+        transition: .3s;
+
+
+      }
+    }
+
+    &__image {
+      transition: .5s ease-in-out;
+    }
+
+    &__caption {
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      padding: 0 20px;
+      color: white;
+      transform: translateY(-50%);
+      text-align: center;
+      transition: .3s;
+
+
+    }
+
+    &__title {
+      display: -webkit-box;
+      max-height: 85px;
+      overflow: hidden;
+      font-family: 'Playfair Display', serif;
+      font-size: 23px;
+      line-height: 28px;
+      text-shadow: 0px 1px 5px black;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    &__snippet {
+      display: -webkit-box;
+      max-height: 150px;
+      margin: 20px 0;
+      overflow: hidden;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-overflow: ellipsis;
+      transition: .5s ease-in-out;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+
+
+    }
+
+    &__button {
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
+      border: 1px solid white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: .3s;
 
       &:hover {
-          .card__caption {
-              top: 50%;
-              transform: translateY(-50%);
-          }
-
-          .card__image {
-              height: 100%;
-              width: 100%;
-              transform: translateY(-10px);
-          }
-          
-
-          .card__thumb {
-              &::after {
-                  top: 0;
-              }
-          }
-
-          .card__snippet {
-              margin: 20px 0;
-          }
+        color: black;
+        background-color: white;
       }
-
-      &__thumb {
-          position: relative;
-          max-height: 400px;
-          overflow: hidden;
-
-          
-
-          &::after {
-              position: absolute;
-              top: 0;
-              display: block;
-              content: '';
-              width: 100%;
-              height: 100%;
-              background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, 0) 100%);
-              transition: .3s;
-
-           
-          }
-      }
-
-      &__image {
-          transition: .5s ease-in-out;
-      }
-
-      &__caption {
-          position: absolute;
-          top: 50%;
-          z-index: 1;
-          padding: 0 20px;
-          color: white;
-          transform: translateY(-50%);
-          text-align: center;
-          transition: .3s;
-
-          
-      }
-
-      &__title {
-          display: -webkit-box;
-          max-height: 85px;
-          overflow: hidden;
-          font-family: 'Playfair Display', serif;
-          font-size: 23px;
-          line-height: 28px;
-          text-shadow: 0px 1px 5px black;
-          text-overflow: ellipsis;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-      }
-
-      &__snippet {
-          display: -webkit-box;
-          max-height: 150px;
-          margin: 20px 0;
-          overflow: hidden;
-          font-family: 'Roboto', sans-serif;
-          font-size: 16px;
-          line-height: 20px;
-          text-overflow: ellipsis;
-          transition: .5s ease-in-out;
-          -webkit-line-clamp: 5;
-          -webkit-box-orient: vertical;
-
-          
-      }
-
-      &__button {
-          display: inline-block;
-          padding: 10px 20px;
-          color: white;
-          border: 1px solid white;
-          font-family: 'Roboto', sans-serif;
-          font-size: 12px;
-          text-transform: uppercase;
-          text-decoration: none;
-          transition: .3s;
-
-          &:hover {
-              color: black;
-              background-color: white;
-          }
-      }
+    }
   }
 
-  
+
   @media screen and (min-width: 270px) and (max-width: 1300px) {
-  
-      .travel-stories{
-          height:850px;
-      }
-      .container-fluid {
-          justify-content: none;
-      }
+
+    .travel-stories {
+      height: 850px;
+    }
+
+    .container-fluid {
+      justify-content: none;
+    }
 
   }
 }
 
 
-.hojoyoffers-Label{
+.hojoyoffers-Label {
   margin-top: 100px !important;
   min-height: 450px;
- background: url('../../asset/images/new\ bg6.png');
+  height: 530px;
+  background: url('../../asset/images/new bg6.png');
 
-  p{
+  p {
     // font-family: 'Roboto', sans-serif;
     // font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight:700;
+    font-weight: 700;
     font-size: 22px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
   }
-  h4{
-    font-size:17px;
+
+  h4 {
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
   }
 }
 
-.hojoyoffers{
+.hojoyoffers {
   width: 90% !important;
-  background-color:white;
+  background-color: white;
   min-height: 270px;
 
 }
 
-.offers-tab{
-  
-    height:70px !important;
-    width: 100% !important;
-    background-color: white;
-    .nav-tabs{
-      justify-content: none !important;
-    }
+.offers-tab {
 
- .nav-link{
+  height: 70px !important;
+  width: 100% !important;
+  background-color: white;
+
+  .nav-tabs {
+    justify-content: none !important;
+  }
+
+  .nav-link {
     color: #1b0e5e !important;
     margin-left: 27px;
     font-family: QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -355,73 +359,77 @@ h1{
     font-weight: 700 !important;
     position: relative;
     cursor: pointer;
- }
+  }
 }
 
-.HojoyBankoffers{
+.HojoyBankoffers {
   width: 100%;
- 
+
 }
 
 
-.OFFERS-CARD{
+.OFFERS-CARD {
   width: 400px;
   height: 265px !important;
   margin-bottom: 15px;
   padding: 16px;
   margin-top: 15px;
-  border:0.5px solid rgb(185, 189, 186)!important;
+  border: 0.5px solid rgb(185, 189, 186) !important;
   min-height: 200px;
   // -moz-box-shadow: 10px 10px 15px #ccc;
   // -webkit-box-shadow: 10px 10px 15px #ccc;
   // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 
-  h4{
+  h4 {
     font-size: 15px;
     font-weight: 700;
   }
-  h6{
+
+  h6 {
     font-size: 12px;
   }
 }
 
-.OFFERS-CARD:hover{
+.OFFERS-CARD:hover {
   // border:7px solid rgba(185, 189, 186, 0.116)!important;
 
   background-color: rgba(204, 204, 204, 0.61);
 }
 
-.bannerimage{
-  -moz-border-radius:15px;
-  -webkit-border-radius:15px;
-  border-radius:15px;
+.bannerimage {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
 }
 
-.DealsCARD{
+.DealsCARD {
   width: 360px !important;
   height: 350px !important;
   padding: 10px;
-  border:0.5px solid rgb(185, 189, 186)!important;
+  border: 0.5px solid rgb(185, 189, 186) !important;
   min-height: 200px;
   -moz-box-shadow: 10px 10px 15px #ccc;
   -webkit-box-shadow: 10px 10px 15px #ccc;
   box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   font-family: 'Roboto', sans-serif;
-  border-radius:10px;
-  h4{
+  border-radius: 10px;
+
+  h4 {
     font-size: 15px;
     font-weight: 700;
   }
-  h6{
+
+  h6 {
     font-size: 12px;
   }
 }
-.top{
+
+.top {
   transition: .2s ease;
   opacity: 0;
   position: absolute;
@@ -429,477 +437,522 @@ h1{
   left: 30%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align:center;
+  text-align: center;
 }
+
 .text {
- 
+
   color: rgb(5, 3, 1);
-  font-size:20px;
+  font-size: 20px;
   padding: 16px 32px;
 }
 
-.DealsCARD:hover{
+.DealsCARD:hover {
   // border:7px solid rgba(185, 189, 186, 0.116)!important;
   background-color: rgba(128, 128, 128, 0.442);
 }
-.top:hover{
+
+.top:hover {
   opacity: 1;
   font-weight: 700;
 }
 
-.labledeals{
-  font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight: 700;
+.labledeals {
+  font-family: QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
   font-size: 23px;
 }
 
-.slidebutton{
-  height: 50px ;
+.slidebutton {
+  height: 50px;
   width: 50px;
   position: absolute;
-  z-index:0;
+  z-index: 2;
   // -moz-box-shadow: 10px 10px 15px #ccc;
   // -webkit-box-shadow: 10px 10px 15px #ccc;
   // box-shadow: 10px 10px 15px #ccc;
   background-color: rgb(255, 255, 255);
   color: blue;
-  margin-top:-10px;
+  margin-top: -15px;
+  margin-left: -33px;
 }
 
-.slidebutton:hover{
+.slidebutton:hover {
   height: 63px !important;
   width: 63px !important;
-  margin-left: -10px;
+  margin-top: -20px;
   background-color: #FFF;
   color: blue;
 }
 
-.slidebutton:active{
+.slidebutton:active {
   background-color: #FFF;
 }
 
-.rightcoldeals{
-  right: 30px;
+.rightcoldeals {
+  right: 12px;
+  margin-top: -15px;
   position: relative;
   color: blue;
   z-index: 3;
 }
-.headerdeals{
-    background: linear-gradient(186.44deg, rgb(179, 183, 255) 10.03%, rgb(255, 237, 230) 91.57%, rgb(255, 255, 255) 277.6%);
-    // background: url('../../asset/images/bg4.png');
-    height: 120px;
-    border-radius: 20px 20px 0px 0px;
-    margin: -10px -26px;
-    margin-top: -10px!important;
-    padding: 20px;
+
+
+.headerdeals {
+  background: linear-gradient(186.44deg, rgb(179, 183, 255) 10.03%, rgb(255, 237, 230) 91.57%, rgb(255, 255, 255) 277.6%);
+  // background: url('../../asset/images/bg4.png');
+  height: 120px;
+  border-radius: 20px 20px 0px 0px;
+  margin: -10px -26px;
+  margin-top: -10px !important;
+  padding: 20px;
 }
-.Hojoyhotelcards{
+
+.Hojoyhotelcards {
   background: url('../../asset/images/new bg6.png');
 
 }
-.cardrad{
+
+.cardrad {
   border-radius: 20px;
   width: auto;
 }
 
-.tabsDeals{
+.tabsDeals {
   background-color: rgb(255, 255, 255) !important;
-    margin-top: -40px!important;   
+  margin-top: -40px !important;
 }
 
-.dealsTab{
+.dealsTab {
   margin-left: -53px;
-  width:110%;
+  width: 110%;
 }
-.dealstabActive:focus{
+
+.dealstabActive:focus {
   color: rgb(245, 245, 245) !important;
 }
 
-.hotelCARD{
+.hotelCARD {
   width: 260px !important;
   height: 400px !important;
   padding: 16px;
-  border:0.5px solid rgb(185, 189, 186)!important;
+  border: 0.5px solid rgb(185, 189, 186) !important;
   min-height: 200px;
   // -moz-box-shadow: 10px 10px 15px #ccc;
   // -webkit-box-shadow: 10px 10px 15px #ccc;
   // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   font-family: 'Roboto', sans-serif;
-  border-radius:10px;
+  border-radius: 10px;
   background-color: #ffffff;
 
-  h4{
+  h4 {
     font-size: 15px;
     font-weight: 700;
   }
-  h6{
+
+  h6 {
     font-size: 12px;
   }
 }
 
 
-.hotelCARD:hover{
-  border:7px solid rgba(185, 189, 186, 0.116)!important;
+.hotelCARD:hover {
+  border: 7px solid rgba(185, 189, 186, 0.116) !important;
   background-color: rgba(128, 128, 128, 0.311);
 }
-.dealsbannerimage{
+
+.dealsbannerimage {
   border-radius: 0px;
-  width:100%;
-  height:200px;
+  width: 100%;
+  height: 200px;
 }
+
 @media only screen and (min-width:"200px") and (max-width:"400px") {
-  .cardrad{
+  .cardrad {
     border-radius: 20px;
     width: auto;
     background-color: #152030;
   }
-  
-.hojoyoffers-Label{
-  margin-top: 290px !important;
-  min-height: 450px;
- background: url('../../asset/images/new\ bg6.png');
 
-  p{
-    // font-family: 'Roboto', sans-serif;
-    // font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-weight:700;
-    font-size: 22px;
-    font-family:Arial, Helvetica, sans-serif;
-
-  }
-  h4{
-    font-size:15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-  }
-}
-.HojoyBankoffers{
-  width: 100%;
-  border-radius: 10px;
-  margin-left:20px;
-
-}
-.OFFERS-CARD{
-  width: 200px;
-  height: 280px;
-  margin-bottom: 15px;
-  padding: 16px;
-  border:2px solid rgb(243, 250, 245)!important;
-  min-height: 200px;
-  // -moz-box-shadow: 10px 10px 15px #ccc;
-  // -webkit-box-shadow: 10px 10px 15px #ccc;
-  // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  background-color: rgba(211, 211, 211, 0.497);
-
-  h4{
-    font-size: 12px;
-    font-weight: 700;
-  }
-  h6{
-    font-size: 8px;
-  }
-}
-.cardbtn{
-  width: max-content;
-  height: 50px;
-  margin-left: 30px;
-  background-color: lightskyblue;
-  padding: 10px;
-}
-.rightcoldeals{
-  right: 20px;
-  position: relative;
-  color: blue;
-  z-index: 3;
-  display: none;
-}
-.slidebutton
-{
-  display: none;
-}
-
-.hotelCARD{
-  width: 280px !important;
-  height: 400px !important;
-  padding: 16px;
-  border:0.5px solid rgb(185, 189, 186)!important;
-  min-height: 200px;
-  // -moz-box-shadow: 10px 10px 15px #ccc;
-  // -webkit-box-shadow: 10px 10px 15px #ccc;
-  // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  font-family: 'Roboto', sans-serif;
-  border-radius:10px;
-  background-color: #ffffff;
-  margin-left: 40px;
-
-  h4{
-    font-size: 15px;
-    font-weight: 700;
-  }
-  h6{
-    font-size: 12px;
-  }
-}
-
-
-.hotelCARD:hover{
-  border:7px solid rgba(185, 189, 186, 0.116)!important;
-  background-color: rgba(128, 128, 128, 0.311);
-}
-
-.bannerimage{
-  -moz-border-radius:15px;
-  -webkit-border-radius:15px;
-  border-radius:15px;
-  margin-right: 10px;
-}
-.DealsCARD{
-  width: 319px !important;
-  height: 350px !important;
-  padding: 10px;
-  border:0.5px solid rgb(185, 189, 186)!important;
-  min-height: 200px;
-  -moz-box-shadow: 10px 10px 15px #ccc;
-  -webkit-box-shadow: 10px 10px 15px #ccc;
-  box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  font-family: 'Roboto', sans-serif;
-  border-radius:10px;
-  h4{
-    font-size: 15px;
-    font-weight: 700;
-  }
-  h6{
-    font-size: 12px;
-  }
-}
-
-
-
-}
-@media only screen and (min-width:"760px") and (max-width:("820px")) {
-  .slidebutton
-{
-  display: none;
-}
-.dealsTab{
-  margin-left: -33px;
-  width:110%;
-  
-}
-.OFFERS-CARD{
-  width: 330px !important;
-  height: 280px !important;
-  // margin: 15px;
-  padding: 16px;
-  border:0.5px solid rgb(185, 189, 186)!important;
-  min-height: 200px;
-  // -moz-box-shadow: 10px 10px 15px #ccc;
-  // -webkit-box-shadow: 10px 10px 15px #ccc;
-  // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-
-  h4{
-    font-size: 15px;
-    font-weight: 700;
-  }
-  h6{
-    font-size: 12px;
-  }
-}
-.DealsCARD{
-  width: 320px !important;
-  height: 350px !important;
-  padding: 10px;
-  border:0.5px solid rgb(185, 189, 186)!important;
-  min-height: 200px;
-  -moz-box-shadow: 10px 10px 15px #ccc;
-  -webkit-box-shadow: 10px 10px 15px #ccc;
-  box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  font-family: 'Roboto', sans-serif;
-  border-radius:10px;
-  h4{
-    font-size: 15px;
-    font-weight: 700;
-  }
-  h6{
-    font-size: 12px;
-  }
-}
-.hotelCARD{
-  width: 220px !important;
-  height: 400px !important;
-  padding: 16px;
-  border:0.5px solid rgb(185, 189, 186)!important;
-  min-height: 200px;
-  // -moz-box-shadow: 10px 10px 15px #ccc;
-  // -webkit-box-shadow: 10px 10px 15px #ccc;
-  // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  font-family: 'Roboto', sans-serif;
-  border-radius:10px;
-  background-color: #ffffff;
-  // margin-left: 40px;
-
-  h4{
-    font-size: 15px;
-    font-weight: 700;
-  }
-  h6{
-    font-size: 12px;
-  }
-}
-}
-@media only screen and (min-width:"821px") and (max-width:"1024px"){
-  .OFFERS-CARD{
-    width: 250px !important;
-    // height: 280px !important;
-    margin-bottom: 15px;
-    padding: 16px;
-    border:0.5px solid rgb(185, 189, 186)!important;
-    min-height: 200px;
-    // -moz-box-shadow: 10px 10px 15px #ccc;
-    // -webkit-box-shadow: 10px 10px 15px #ccc;
-    // box-shadow: 10px 10px 15px #ccc;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
-  
-    h4{
-      font-size: 15px;
-      font-weight: 700;
-    }
-    h6{
-      font-size: 12px;
-    }
-  }
-  .HojoyBankoffersmedia{
-    width: 85%;
-    margin-left: 30px;
-  }
-  .bannerimage{
-    width: 70px !important;
-    height: 80px !important;
-    margin-right: 10px;
-  }
-  .slidebutton
-  {
-    display: none;
-  }
-  .DealsCARD{
-    width: 290px !important;
-  }
-  .hotelCARD{
-    width: 220px !important;
-    height: 400px !important;
-    padding: 16px;
-    border:0.5px solid rgb(185, 189, 186)!important;
-    min-height: 200px;
-    // -moz-box-shadow: 10px 10px 15px #ccc;
-    // -webkit-box-shadow: 10px 10px 15px #ccc;
-    // box-shadow: 10px 10px 15px #ccc;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    font-family: 'Roboto', sans-serif;
-    border-radius:10px;
-    background-color: #ffffff;
-  
-    h4{
-      font-size: 15px;
-      font-weight: 700;
-    }
-    h6{
-      font-size: 12px;
-    }
-  }
-  
-}
-@media only screen and (min-width:"530px") and (max-width:"760px"){
-  .DealsCARD{
-    width: 100% !important;
-    height: 350px !important; 
-    padding: 10px;
-    border:0.5px solid rgb(185, 189, 186)!important;
-    min-height: 200px;
-    -moz-box-shadow: 10px 10px 15px #ccc;
-    -webkit-box-shadow: 10px 10px 15px #ccc;
-    box-shadow: 10px 10px 15px #ccc;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    font-family: 'Roboto', sans-serif;
-    border-radius:10px;
-    h4{
-      font-size: 15px;
-      font-weight: 700;
-    }
-    h6{
-      font-size: 12px;
-    }
-  }
-}
-@media only screen and (min-width:"410px") and (max-width:"450px") {
-  .hojoyoffers-Label{
-    margin-top: 250px !important;
+  .hojoyoffers-Label {
+    margin-top: 290px !important;
     min-height: 450px;
-   background: url('../../asset/images/new\ bg6.png');
-  
-    p{
+    background: url('../../asset/images/new\ bg6.png');
+
+    p {
       // font-family: 'Roboto', sans-serif;
       // font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-weight:700;
+      font-weight: 700;
       font-size: 22px;
-      font-family:Arial, Helvetica, sans-serif;
-  
+      font-family: Arial, Helvetica, sans-serif;
+
     }
-    h4{
-      font-size:17px;
+
+    h4 {
+      font-size: 15px;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
     }
   }
-  .slidebutton{
+
+  .HojoyBankoffers {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 20px;
+
+  }
+
+  .OFFERS-CARD {
+    width: 200px;
+    height: 280px;
+    margin-bottom: 15px;
+    padding: 16px;
+    border: 2px solid rgb(243, 250, 245) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.497);
+
+    h4 {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 8px;
+    }
+  }
+
+  .cardbtn {
+    width: max-content;
+    height: 50px;
+    margin-left: 30px;
+    background-color: lightskyblue;
+    padding: 10px;
+  }
+
+  .rightcoldeals {
+    right: 20px;
+    position: relative;
+    color: blue;
+    z-index: 3;
     display: none;
   }
-  .dealsTab{
-    margin-left: -33px;
-    width:110%;
-  }
-  
-.hotelCARD{
-  width: 260px !important;
-  height: 400px !important;
-  padding: 16px;
-  border:0.5px solid rgb(185, 189, 186)!important;
-  min-height: 200px;
-  // -moz-box-shadow: 10px 10px 15px #ccc;
-  // -webkit-box-shadow: 10px 10px 15px #ccc;
-  // box-shadow: 10px 10px 15px #ccc;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  font-family: 'Roboto', sans-serif;
-  border-radius:10px;
-  background-color: #ffffff;
-  margin-left: 45px;
 
-  h4{
-    font-size: 15px;
-    font-weight: 700;
+  .slidebutton {
+    display: none;
   }
-  h6{
-    font-size: 12px;
+
+  .hotelCARD {
+    width: 280px !important;
+    height: 400px !important;
+    padding: 16px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 40px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+
+  .hotelCARD:hover {
+    border: 7px solid rgba(185, 189, 186, 0.116) !important;
+    background-color: rgba(128, 128, 128, 0.311);
+  }
+
+  .bannerimage {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+
+  .DealsCARD {
+    width: 319px !important;
+    height: 350px !important;
+    padding: 10px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    -moz-box-shadow: 10px 10px 15px #ccc;
+    -webkit-box-shadow: 10px 10px 15px #ccc;
+    box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+
+
+}
+
+@media only screen and (min-width:"760px") and (max-width:("820px")) {
+  .slidebutton {
+    display: none;
+  }
+
+  .dealsTab {
+    margin-left: -33px;
+    width: 110%;
+
+  }
+
+  .OFFERS-CARD {
+    width: 330px !important;
+    height: 280px !important;
+    // margin: 15px;
+    padding: 16px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+  .DealsCARD {
+    width: 320px !important;
+    height: 350px !important;
+    padding: 10px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    -moz-box-shadow: 10px 10px 15px #ccc;
+    -webkit-box-shadow: 10px 10px 15px #ccc;
+    box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+  .hotelCARD {
+    width: 220px !important;
+    height: 400px !important;
+    padding: 16px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background-color: #ffffff;
+    // margin-left: 40px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
   }
 }
+
+@media only screen and (min-width:"821px") and (max-width:"1024px") {
+  .OFFERS-CARD {
+    width: 250px !important;
+    // height: 280px !important;
+    margin-bottom: 15px;
+    padding: 16px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+  .HojoyBankoffersmedia {
+    width: 85%;
+    margin-left: 30px;
+  }
+
+  .bannerimage {
+    width: 70px !important;
+    height: 80px !important;
+    margin-right: 10px;
+  }
+
+  .slidebutton {
+    display: none;
+  }
+
+  .DealsCARD {
+    width: 290px !important;
+  }
+
+  .hotelCARD {
+    width: 220px !important;
+    height: 400px !important;
+    padding: 16px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+
+}
+
+@media only screen and (min-width:"530px") and (max-width:"760px") {
+  .DealsCARD {
+    width: 100% !important;
+    height: 350px !important;
+    padding: 10px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    -moz-box-shadow: 10px 10px 15px #ccc;
+    -webkit-box-shadow: 10px 10px 15px #ccc;
+    box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
+}
+
+@media only screen and (min-width:"410px") and (max-width:"450px") {
+  .hojoyoffers-Label {
+    margin-top: 250px !important;
+    min-height: 450px;
+    background: url('../../asset/images/new\ bg6.png');
+
+    p {
+      // font-family: 'Roboto', sans-serif;
+      // font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-weight: 700;
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    h4 {
+      font-size: 17px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  .slidebutton {
+    display: none;
+  }
+
+  .dealsTab {
+    margin-left: -33px;
+    width: 110%;
+  }
+
+  .hotelCARD {
+    width: 260px !important;
+    height: 400px !important;
+    padding: 16px;
+    border: 0.5px solid rgb(185, 189, 186) !important;
+    min-height: 200px;
+    // -moz-box-shadow: 10px 10px 15px #ccc;
+    // -webkit-box-shadow: 10px 10px 15px #ccc;
+    // box-shadow: 10px 10px 15px #ccc;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-left: 45px;
+
+    h4 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h6 {
+      font-size: 12px;
+    }
+  }
 }

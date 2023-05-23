@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import { Card } from 'react-bootstrap';
 import 'react-day-picker/dist/style.css';
 import moment from 'moment';
+import '../../pages/car/car.scss';
 
 
 export default function CustomDatePickers({ onDayClick, Searchstyle, selected, calanderstyle, value, previous }) {
@@ -64,9 +65,9 @@ export default function CustomDatePickers({ onDayClick, Searchstyle, selected, c
         {`${value.toString()}`}
       </div>
       {open && (
-        <Card className={calanderstyle} style={{ position: 'absolute', zIndex: '1'}} ref={refOne}>
-          <Card.Body >
-            <DayPicker
+        <Card className={calanderstyle} style={{ position: 'absolute', zIndex: '1'}} id='calendar' ref={refOne}>
+          <Card.Body>
+            <DayPicker 
               fromDate={new Date()}
               mode="single"
               required

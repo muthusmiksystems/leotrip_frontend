@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+    import React, { useState, useEffect, useRef } from "react";
 import "./timepicker.css";
 import './car.scss';
 import { useHistory } from 'react-router-dom';
@@ -188,9 +188,9 @@ const OneWay = () => {
 
                 <div className='d-inline-flex mt-5 my-4 mx-auto carmain'>
                     <div className=" carsub_main">
-                        <div className='carsearchbox border-bottom border-2 mt-2'>
+                        <div className='carsearchbox mt-2'>
 
-                            <p>From</p>
+                            <p className="bg-white px-2">From</p>
                             {/* <LocalSearch
                                 value={fromaddress}
                                 onChange={(e) => FromAddress(e)}
@@ -226,11 +226,11 @@ const OneWay = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='icon d-flex justify-content-center my-4 caricon'>
+                    <div className='icon d-flex justify-content-center caricon'>
                         <FontAwesomeIcon icon={faArrowRightArrowLeft} onClick={() => switchText(from, to)} style={{ fontSize: "20px", color: "green" }} />
                     </div>
-                    <div className='carsearchbox border-bottom border-2 mt-2'>
-                        <p className="w-auto">To</p>
+                    <div className='carsearchbox mt-2'>
+                        <p className="bg-white px-2">To</p>
                         {/* <LocalSearch
                             value={toaddress}
                             onChange={(e) => ToAddress(e)}
@@ -268,8 +268,8 @@ const OneWay = () => {
                         </div>
                     </div>
                     <div className='row mt-2 me-5'>
-                        <div className='col-6 dateselections'>
-                            <p>Pickup Date</p>
+                        <div className='col-6 dateselections px-0'>
+                            <p className="bg-white px-2">Pickup Date</p>
                             <CustomDatePickers
                                 maxDate={moment().format("PP")}
                                 value={date}
@@ -295,7 +295,7 @@ const OneWay = () => {
                         </div> */}
                     </div>
                 </div>
-                <div className='carbutton'>
+                <div className='carbutton me-5'>
                     <CustomButton customstyle='carbtnsearch' onClick={() => { handleSubmit(date) }} value='SEARCH CAR'></CustomButton>
                 </div>
 

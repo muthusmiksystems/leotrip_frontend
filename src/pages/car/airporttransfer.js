@@ -182,11 +182,11 @@ const AirportTransfer = () => {
         <div>
             {(fromaddress === '' || toaddress === '') ? <h6 className="font-weight-bold text-danger mt-2">{errormsg}</h6> : null}
 
-            <div className='d-inline-flex content mt-5 my-4 airportcontent'>
+            <div className='d-inline-flex content mt-5 airportcontent mx-auto'>
                 <div>
-                    <div className='carsearchbox border-bottom border-2 mt-2 carsearchbox1'>
+                    <div className='carsearchbox mt-2 carsearchbox1 p-0'>
 
-                        <p>From</p>
+                        <p className="bg-white px-2">From</p>
                         {/* <LocalSearch
                                 value={fromaddress}
                                 onChange={(e) => FromAddress(e)}
@@ -222,11 +222,11 @@ const AirportTransfer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='icon d-flex justify-content-center my-4 caricon '>
+                <div className='icon d-flex justify-content-center caricon '>
                     <FontAwesomeIcon icon={faArrowRightArrowLeft} onClick={() => switchText(from, to)} style={{ fontSize: "20px", color: "green" }} />
                 </div>
-                <div className='carsearchbox border-bottom border-2 mt-2 carsearchbox1'>
-                    <p className="w-auto ">To</p>
+                <div className='carsearchbox mt-2 carsearchbox1 p-0'>
+                    <p className="bg-white px-2">To</p>
                     {/* <LocalSearch
                             value={toaddress}
                             onChange={(e) => ToAddress(e)}
@@ -263,9 +263,9 @@ const AirportTransfer = () => {
                         />
                     </div>
                 </div>
-                <div className='row mt-2 me-5'>
-                    <div className='col-6 dateselections dateselections1'>
-                        <p>Pickup Date</p>
+                <div className='row mt-2 '>
+                    <div className='col-6 dateselections dateselections1 me-5' id="dateselections1" >
+                        <p className="bg-white px-2">Pickup Date</p>
                         <CustomDatePickers
                             maxDate={moment().format("PP")}
                             value={date}
@@ -290,7 +290,7 @@ const AirportTransfer = () => {
                     </div> */}
                 </div>
             </div>
-            <div className='carbutton'>
+            <div className='carbutton mt-5 me-5' id="carbutton3">
                 <CustomButton customstyle='carbtnsearch' onClick={() => { handleSubmit(date) }} value='SEARCH CAR'></CustomButton>
             </div>
 

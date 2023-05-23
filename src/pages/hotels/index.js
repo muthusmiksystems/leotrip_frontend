@@ -217,7 +217,7 @@ const Hotels = () => {
                         <CustomNavbar />
                         <div className="headerImage">
                             <div className="container ">
-                                <h2 className='text-white text-center mt-3'>Book Hotels & Homestays</h2>
+                                <h2 className='text-white text-center'>Book Hotels & Homestays</h2>
                                 <div className='searchcontainer mt-3 mx-auto'>
                                     <h6 className="fw-bold headingcolor h5">Book Your Rooms With Best Deals</h6>
                                     <div className=' d-inline-flex content content1 hotelcontent mb-3 mt-5'style={{height:"100px"}}>

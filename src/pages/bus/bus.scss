@@ -8,11 +8,11 @@
     background-image: url(../../asset/images/newbakground.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 323px;
+    height: 354px;
     background-position: bottom;
-    padding-top: 5px;
+    padding-top: 30px;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 66px;
   }
 
   h2 {
@@ -21,8 +21,8 @@
     font-weight: bold;
     font-size: 24px;
     font-weight: 700;
-    margin: 30px 0;
-    margin-bottom: 30px;
+    margin: 30px 0px 20px 0px;
+    line-height: 30px;
     letter-spacing: 1px;
   }
 
@@ -55,8 +55,9 @@
 
 .buspickup {
   height: 60px;
-  width: 260px;
+  width: 280px;
   margin-left: 10px;
+  margin-right: 20px;
   border-radius: 8px;
   border: 2.5px solid #dfdfdf; //#dfdfdf
   cursor: pointer;
@@ -73,6 +74,9 @@
     color: rgba(119, 119, 119, 0.662);
     position: absolute;
   }
+}
+.buspickup:hover {
+  border: 2.5px solid #6e6d6d;
 }
 
 .busbutton {
@@ -111,14 +115,13 @@
 }
 
 .bussearchbox {
-  width: 350px;
-  border: 2.5px solid #dfdfdf;
+  width: 280px;
+  border: 2.5px solid #dfdfdf;//#dfdfdf
   border-radius: 8px;
   height: 60px;
   background: rgb(255, 255, 255);
   cursor: pointer;
   position: relative;
-  margin-right: 10px;
 
   p {
     margin: -12px 0px 0% 22px;
@@ -130,7 +133,7 @@
     position: absolute;
     text-align: center;
   }
-
+  
   input {
     width: 100%;
     height: 55px;
@@ -149,6 +152,10 @@
     color: rgba(36, 35, 35, 0.451);
     opacity: 1;
   }
+}
+
+.bussearchbox:hover {
+  border: 2.5px solid #6e6d6d;
 }
 
 .Bus_searchdate {

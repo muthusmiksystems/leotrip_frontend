@@ -1,16 +1,21 @@
 .carsearch {
-    min-height: 340px;
+    min-height: 350px;
     position: static;
-    height: auto;
+    height: 320px;
+
+    .headerImage {
+        height: 350px;
+        margin-bottom: 200px;
+    }
 
     h2 {
         text-align: center;
         font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-weight: bold;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
-        margin: 19px 0;
-        margin-bottom: 30px;
+        line-height: 30px;
+        margin: 30px 0px 20px 0px;
         letter-spacing: 1px;
     }
 
@@ -21,33 +26,29 @@
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
         position: relative;
         z-index: 6;
-        width:fit-content;
-        // margin:  -5px 27%;
+        width: fit-content;
         padding-right: 1rem;
         margin-top: -5px;
+        height: 267px;
     }
 
-    a{
-        text-decoration:none !important;
+    a {
+        text-decoration: none !important;
     }
-
 }
 
 .carsearchbox {
-    width: 370px;
-    border: 2.5px solid #dfdfdf;
+    width: 300px;
+    border: 2.5px solid #dfdfdf; //#dfdfdf
     border-radius: 8px;
     height: 60px;
     background: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
+    // margin-left: 10px;
 
     p {
-        background-color: #fff;
-        margin-top: -12px;
-        margin-bottom: 0%;
-        width: 38px;
-        margin-left: 22px;
+        margin: -12px 0px 0% 17px;
         font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-size: 14px;
         display: inline-flex;
@@ -61,27 +62,38 @@
     input {
         width: 100%;
         height: 55px;
-        border: none;
         background: rgb(255, 255, 255);
-        font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         color: rgb(4, 4, 4);
         border: none;
         outline: none;
         border-radius: 8px;
-        outline: 0px;
         font-size: 16px;
-        // line-height: 28px;
-        padding: 19px 35px;
+        padding: 19px 25px;
         font-weight: 700;
     }
 
     input::placeholder {
-        color:rgba(36, 35, 35, 0.488);
+        color: rgba(36, 35, 35, 0.488);
         opacity: 1;
-      }
+    }
 }
 
-.flightcontent{
+.carsearchbox:hover {
+    border: 2.5px solid #6e6d6d;
+}
+
+.caricon {
+    margin-top: 20px;
+    margin: 20px 15px 0px 15px;
+    // position: absolute;
+}
+
+.carRoundTrip_icon {
+    margin: 20px 15px 0px 15px;
+}
+
+.flightcontent {
     padding-left: 5px;
 }
 
@@ -95,7 +107,7 @@
         color: rgb(119, 119, 119);
         margin-bottom: 0%;
         margin-right: 33px;
-        
+
     }
 }
 
@@ -105,7 +117,7 @@
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .carbtnsearch {
@@ -125,12 +137,12 @@
     border: 0px;
     cursor: pointer;
     letter-spacing: 2px;
-    margin-bottom: -67px;
 }
-.carbtnsearch:hover{
-   background: url('../../asset/images/bg3.png');
-   background-repeat: no-repeat;
-   background-size: cover;
+
+.carbtnsearch:hover {
+    background: url('../../asset/images/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .dateselections {
@@ -138,19 +150,14 @@
     width: 250px;
     margin-left: 25px;
     border-radius: 8px;
-    // padding:" 0px 20px",
-    border: 2.5px solid #dfdfdf;
+    border: 2.5px solid #dfdfdf; //#dfdfdf
     cursor: pointer;
     color: #242222;
     font-size: 17px;
-    padding-bottom: -115px;
 
 
     p {
-        background-color: #fff;
-        margin-top: -12px;
-        margin-bottom: 0%;
-        margin-left: 22px;
+        margin: -12px 0px 0% 17px;
         font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-size: 14px;
         display: inline-flex;
@@ -158,6 +165,15 @@
         color: rgb(119, 119, 119);
         position: absolute;
     }
+}
+
+.dateselections:hover {
+    border: 2.5px solid #6e6d6d;
+}
+
+#calendar {
+    width: 340px;
+    margin-left: 0px;
 }
 
 .car_searchdate {
@@ -168,7 +184,6 @@
     min-height: 55px;
     padding: 13px;
     cursor: pointer;
-    // border-right: 1.8px solid rgb(218, 215, 215);
     outline: none;
     margin-bottom: 5px;
 }
@@ -185,7 +200,7 @@
     right: 1.5rem;
 }
 
-body{
+body {
     font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -204,18 +219,16 @@ body{
 
 .roundcarsearchbox {
     width: 280px;
-    border: 2.5px solid #dfdfdf;
+    border: 2.5px solid #dfdfdf; //#dfdfdf
     border-radius: 8px;
     height: 60px;
     background: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
+
     p {
         background-color: #fff;
-        margin-top: -15px;
-        margin-bottom: 0%;
-        width: 38px;
-        margin-left: 22px;
+        margin: -15px 0px 0% 22px;
         font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-size: 14px;
         display: inline-flex;
@@ -231,7 +244,7 @@ body{
         height: 55px;
         border: none;
         background: rgb(255, 255, 255);
-        font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         color: rgba(4, 4, 4, 0.777);
         border: none;
         outline: none;
@@ -244,22 +257,24 @@ body{
     }
 
     input::placeholder {
-        color:rgba(36, 35, 35, 0.57);
+        color: rgba(36, 35, 35, 0.57);
         opacity: 1;
-      }
+    }
+}
+
+.roundcarsearchbox:hover {
+    border: 2.5px solid #6e6d6d;
 }
 
 .rounddateselections {
     height: 60px;
     width: 210px;
-    margin-left: 10px;
+    margin-left: 15px;
     border-radius: 8px;
-    // padding:" 0px 20px",
     border: 2.5px solid #dfdfdf;
     cursor: pointer;
     color: #242222ae;
     font-size: 17px;
-    padding-bottom: -115px;
 
 
     p {
@@ -275,208 +290,299 @@ body{
         position: absolute;
     }
 }
-@media only screen and (min-width:"200px") and (max-width:"400px") {
-    .cartripselection{
+
+.rounddateselections:hover {
+    border: 2.5px solid #6e6d6d;
+}
+
+#dateboxright {
+    margin-right: 50px;
+}
+
+@media only screen and (min-width:"200px") and (max-width:"300px") {
+    .carsearch {
+        min-height: 400px;
+        position: static;
+        height: auto;
+
+        .headerImage {
+            height: 320px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-weight: bold;
+            font-size: 26px;
+            font-weight: 700;
+            margin: 40px 0px 20px 0px;
+            letter-spacing: 1px;
+        }
+
+        .carsearchcontainer {
+            background-color: rgb(255, 255, 255);
+            border-radius: 1.2rem;
+            padding: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
+            position: relative;
+            z-index: 6;
+            width: fit-content;
+            padding-right: 0rem;
+            height: 495px;
+            width: auto;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+    }
+
+    .cartripselection {
         display: flex;
         flex-direction: column;
     }
-   .caricon{
-    display: none !important;
-   }
-   .carmain{
-    display: flex !important;
-    flex-direction:column;
-    margin-top: 0px !important;
 
-   }
-   .carsub_main{
-    margin-left: 0px !important;
-   }
-   .carsearchbox {
-    width: 250px;
-    border: 2.5px solid #dfdfdf;
-    border-radius: 8px;
-    height: 60px;
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-    position: relative;
-    margin: 10px;
-
-    p {
-        background-color: #fff;
-        margin-top: -12px;
-        margin-bottom: 0%;
-        width: 20px;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgb(107, 103, 103);
-        position: absolute;
-        text-align: center;
-        margin-top: -10px;
-
+    .caricon {
+        display: none !important;
     }
 
-    input {
-        width: 100%;
-        height: 55px;
-        border: none;
-        background: rgb(255, 255, 255);
-        font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        color: rgb(4, 4, 4);
-        border: none;
-        outline: none;
-        border-radius: 8px;
-        outline: 0px;
-        font-size: 16px;
-        // line-height: 28px;
-        padding: 19px 35px;
-        font-weight: 700;
-    }
-
-    input::placeholder {
-        color:rgba(36, 35, 35, 0.488);
-        opacity: 1;
-      }
-}
-.dateselections {
-    height: 60px;
-    width: 250px;
-    margin-left: 20px;
-    border-radius: 8px;
-    // padding:" 0px 20px",
-    border: 2.5px solid #dfdfdf;
-    cursor: pointer;
-    color: #242222bc;
-    font-size: 17px;
-    padding-bottom: -115px;
-
-
-    p {
-        background-color: #fff;
-        margin-top: -9px;
-        margin-bottom: 0%;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgb(119, 119, 119);
-        position: absolute;
-    }
-}
-.carRoundTrip_icon{
-    display: none !important;
-}
-.flightcontent{
-    padding-left: 5px;
-    display:flex !important;
-    flex-wrap: wrap !important;
-    margin-top: 0px !important;
-}
-.roundcarsearchbox {
-    width: 300px;
-    border: 2.5px solid #dfdfdf;
-    border-radius: 8px;
-    height: 60px;
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-    position: relative;
-   
-    p {
-        background-color: #fff;
-        margin-top: -10px;
-        margin-bottom: 0%;
-        width: 25px;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgb(107, 103, 103);
-        position: absolute;
-        text-align: center;
-
-    }
-
-    input {
-        width: 100%;
-        height: 55px;
-        border: none;
-        background: rgb(255, 255, 255);
-        font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        color: rgba(4, 4, 4, 0.549);
-        border: none;
-        outline: none;
-        border-radius: 8px;
-        outline: 0px;
-        font-size: 16px;
-        // line-height: 28px;
-        padding: 5px 25px;
-        font-weight: 700;
-    }
-
-    input::placeholder {
-        color:rgba(36, 35, 35, 0.56);
-        opacity: 1;
-      }
-}
-.rounddateselections {
-    height: 60px;
-    width: 300px;
-    margin-left:0px;
-    border-radius: 8px;
-    // padding:" 0px 20px",
-    border: 2.5px solid #dfdfdf;
-    cursor: pointer;
-    color: #242222dc;
-    font-size: 17px;
-    padding-bottom: -115px;
-
-
-    p {
-        background-color: #fff;
-        margin-top: -14px;
-        margin-bottom: 0%;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgb(119, 119, 119);
-        position: absolute;
-    }
-}
-.carsearchbox1{
-    margin-left: -40px;
-}
-.dateselections1{
-    margin-left: -30px;
-    width: 330px;
-}
-.airportcontent{
-    margin-top: 0px!important;
-}
-}
-@media only screen and (min-width:"760") and (max-width:"820px"){
-    .carmain{
-        flex-wrap: wrap;
+    .carmain {
+        display: flex !important;
+        flex-direction: column;
         margin-top: 0px !important;
     }
-    .caricon{
+
+    .carsub_main {
+        margin-left: 0px !important;
+    }
+
+    .carsearchbox {
+        width: 200px;
+        border: 2.5px solid #dfdfdf; //#dfdfdf
+        border-radius: 8px;
+        height: 60px;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        margin: 10px 10px;
+
+        p {
+            margin: -12px 0px 0% 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgb(107, 103, 103);
+            position: absolute;
+            text-align: center;
+
+        }
+
+        input {
+            width: 100%;
+            height: 55px;
+            background: rgb(255, 255, 255);
+            font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: rgb(4, 4, 4);
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 19px 15px;
+            font-weight: 700;
+        }
+
+        input::placeholder {
+            color: rgba(36, 35, 35, 0.488);
+            opacity: 1;
+        }
+    }
+
+    .carsearchbox1{
+        margin-left: -15px;
+    }
+
+    .carbutton {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-top: 122px;
+        margin-left: 35px;
+    }
+    #carbutton2 {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-top: 0px;
+        margin-left: 35px;
+    }
+    #carbutton3 {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin-top: 98px;
+        margin-left: 35px;
+    }
+
+    .dateselections {
+        height: 60px;
+        width: 250px;
+        margin-left: 20px;
+        border-radius: 8px;
+        border: 2.5px solid #dfdfdf; //#dfdfdf
+        cursor: pointer;
+        color: #242222bc;
+        font-size: 17px;
+
+        p {
+            margin: -9px 0px 0% 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgb(119, 119, 119);
+            position: absolute;
+        }
+    }
+
+    #dateselections1{
+        width: 200px;
+        border: 2.5px solid #dfdfdf; //#dfdfdf
+        margin-left: 0px;
+
+        p {
+            margin: -9px 0px 0% 8px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgb(119, 119, 119);
+            position: absolute;
+        }
+    }
+
+    
+
+    .carRoundTrip_icon {
         display: none !important;
-       }
-       .carsearchbox {
-        width: 270px;
+    }
+
+    .flightcontent {
+        padding-left: 5px;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin-top: 0px !important;
+    }
+
+    .roundcarsearchbox {
+        width: 200px;
+        border: 2.5px solid #dfdfdf; //#dfdfdf
+        border-radius: 8px;
+        height: 60px;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 15px;
+
+        p {
+            margin: -10px 0px 0% 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgb(107, 103, 103);
+            position: absolute;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            height: 55px;
+            background: rgb(255, 255, 255);
+            font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: rgba(4, 4, 4, 0.549);
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 5px 20px;
+            font-weight: 700;
+        }
+
+        input::placeholder {
+            color: rgba(36, 35, 35, 0.56);
+            opacity: 1;
+        }
+    }
+
+    .rounddateselections {
+        height: 60px;
+        width: 200px;
+        border-radius: 8px;
+        border: 2.5px solid #dfdfdf; //#dfdfdf
+        cursor: pointer;
+        color: #242222dc;
+        font-size: 17px;
+        margin-bottom: 20px;
+
+
+        p {
+            margin-top: -14px 0px 0% 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgb(119, 119, 119);
+            position: absolute;
+        }
+    }
+
+    #dateboxright {
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .dateselections1 {
+        margin-left: -30px;
+        width: 330px;
+    }
+
+    .airportcontent {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (min-width:"410px") and (max-width:"450px") {
+
+    .cartripselection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caricon {
+        display: none !important;
+    }
+
+    .carmain {
+        flex-wrap: wrap;
+    }
+
+    .carsearchbox {
+        width: auto;
         border: 2.5px solid #dfdfdf;
         border-radius: 8px;
         height: 60px;
         background: rgb(255, 255, 255);
         cursor: pointer;
         position: relative;
-    
+
         p {
             background-color: #fff;
             margin-top: -12px;
@@ -487,18 +593,18 @@ body{
             font-size: 14px;
             display: inline-flex;
             font-weight: 700;
-            color: rgba(107, 103, 103, 0.536);
+            color: rgba(107, 103, 103, 0.663);
             position: absolute;
             text-align: center;
-    
+
         }
-    
+
         input {
             width: 100%;
             height: 55px;
             border: none;
             background: rgb(255, 255, 255);
-            font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             color: rgb(4, 4, 4);
             border: none;
             outline: none;
@@ -509,81 +615,60 @@ body{
             padding: 19px 35px;
             font-weight: 700;
         }
-    
+
         input::placeholder {
-            color:rgba(36, 35, 35, 0.488);
+            color: rgba(36, 35, 35, 0.488);
             opacity: 1;
-          }
+        }
     }
-    .carsub_main{
-        margin-left: 13px !important;
-        margin-right: 10px;
-        margin-bottom: 15px;
-    }
-    .flightcontent{
-        flex-wrap: wrap;
-        margin-top: 0px !important;
-    }
-    .roundcarsearchbox {
-        width: 270px;
-        border: 2.5px solid #dfdfdf;
-        border-radius: 8px;
+
+    .dateselections {
         height: 60px;
-        background: rgb(255, 255, 255);
+        width: 255px;
+        margin-left: 15px;
+        border-radius: 8px;
+        // padding:" 0px 20px",
+        border: 2.5px solid #dfdfdf;
         cursor: pointer;
-        position: relative;
+        color: #242222;
+        font-size: 17px;
+        padding-bottom: -115px;
+
+
         p {
             background-color: #fff;
-            margin-top: -15px;
+            margin-top: -12px;
             margin-bottom: 0%;
-            width: 38px;
             margin-left: 22px;
             font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             font-size: 14px;
             display: inline-flex;
             font-weight: 700;
-            color: rgba(107, 103, 103, 0.619);
+            color: rgb(119, 119, 119);
             position: absolute;
-            text-align: center;
-    
         }
-    
-        input {
-            width: 100%;
-            height: 55px;
-            border: none;
-            background: rgb(255, 255, 255);
-            font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            color: rgba(4, 4, 4, 0.777);
-            border: none;
-            outline: none;
-            border-radius: 8px;
-            outline: 0px;
-            font-size: 16px;
-            // line-height: 28px;
-            padding: 5px 25px;
-            font-weight: 700;
-        }
-    
-        input::placeholder {
-            color:rgba(36, 35, 35, 0.57);
-            opacity: 1;
-          }
     }
+
+    .flightcontent {
+        padding-left: 5px;
+        flex-wrap: wrap;
+        margin-top: 10px !important;
+
+    }
+
     .rounddateselections {
         height: 60px;
-        width: 270px;
-        margin-left:0px;
+        width: 210px;
+        margin-left: 10px;
         border-radius: 8px;
-        // padding:" 0px 20px",
         border: 2.5px solid #dfdfdf;
         cursor: pointer;
         color: #242222ae;
         font-size: 17px;
         padding-bottom: -115px;
-        margin-right: 20px;
-    
-    
+        margin-top: 15px !important;
+
+
         p {
             background-color: #fff;
             margin-top: -14px;
@@ -597,11 +682,159 @@ body{
             position: absolute;
         }
     }
+
+}
+
+@media only screen and (min-width:"760") and (max-width:"820px") {
+    .carmain {
+        flex-wrap: wrap;
+        margin-top: 0px !important;
+    }
+
+    .caricon {
+        display: none !important;
+    }
+
+    .carsearchbox {
+        width: 270px;
+        border: 2.5px solid #dfdfdf;
+        border-radius: 8px;
+        height: 60px;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+
+        p {
+            background-color: #fff;
+            margin-top: -12px;
+            margin-bottom: 0%;
+            width: 38px;
+            margin-left: 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgba(107, 103, 103, 0.536);
+            position: absolute;
+            text-align: center;
+
+        }
+
+        input {
+            width: 100%;
+            height: 55px;
+            border: none;
+            background: rgb(255, 255, 255);
+            font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: rgb(4, 4, 4);
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            outline: 0px;
+            font-size: 16px;
+            // line-height: 28px;
+            padding: 19px 35px;
+            font-weight: 700;
+        }
+
+        input::placeholder {
+            color: rgba(36, 35, 35, 0.488);
+            opacity: 1;
+        }
+    }
+
+    .carsub_main {
+        margin-left: 13px !important;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .flightcontent {
+        flex-wrap: wrap;
+        margin-top: 0px !important;
+    }
+
+    .roundcarsearchbox {
+        width: 270px;
+        border: 2.5px solid #dfdfdf;
+        border-radius: 8px;
+        height: 60px;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+
+        p {
+            background-color: #fff;
+            margin-top: -15px;
+            margin-bottom: 0%;
+            width: 38px;
+            margin-left: 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgba(107, 103, 103, 0.619);
+            position: absolute;
+            text-align: center;
+
+        }
+
+        input {
+            width: 100%;
+            height: 55px;
+            border: none;
+            background: rgb(255, 255, 255);
+            font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: rgba(4, 4, 4, 0.777);
+            border: none;
+            outline: none;
+            border-radius: 8px;
+            outline: 0px;
+            font-size: 16px;
+            // line-height: 28px;
+            padding: 5px 25px;
+            font-weight: 700;
+        }
+
+        input::placeholder {
+            color: rgba(36, 35, 35, 0.57);
+            opacity: 1;
+        }
+    }
+
+    .rounddateselections {
+        height: 60px;
+        width: 270px;
+        margin-left: 0px;
+        border-radius: 8px;
+        // padding:" 0px 20px",
+        border: 2.5px solid #dfdfdf;
+        cursor: pointer;
+        color: #242222ae;
+        font-size: 17px;
+        padding-bottom: -115px;
+        margin-right: 20px;
+
+
+        p {
+            background-color: #fff;
+            margin-top: -14px;
+            margin-bottom: 0%;
+            margin-left: 22px;
+            font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            display: inline-flex;
+            font-weight: 700;
+            color: rgba(119, 119, 119, 0.616);
+            position: absolute;
+        }
+    }
+
     .carsearch {
         min-height: 340px;
         position: static;
         height: auto;
-    
+
         h2 {
             text-align: center;
             font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -612,7 +845,7 @@ body{
             margin-bottom: 30px;
             letter-spacing: 1px;
         }
-    
+
         .carsearchcontainer {
             background-color: rgb(255, 255, 255);
             border-radius: 1.2rem;
@@ -626,12 +859,13 @@ body{
             margin-top: -5px;
             height: 290px;
         }
-    
-        a{
-            text-decoration:none !important;
+
+        a {
+            text-decoration: none !important;
         }
-    
+
     }
+
     .carbtnsearch {
         display: inline-flex;
         -webkit-box-align: center;
@@ -651,19 +885,23 @@ body{
         letter-spacing: 2px;
         margin-bottom: -37px;
     }
-    .airportcontent{
+
+    .airportcontent {
         flex-wrap: wrap;
         margin-top: 0px !important;
     }
-    .carsearchbox1{
-        width: 260px;
-        margin-right: 15px;
-    }
-    .dateselections1{
+
+    // .carsearchbox1 {
+    //     width: 260px;
+    //     margin-right: 15px;
+    // }
+
+    .dateselections1 {
         margin-left: 10px;
         width: 260px;
         margin-top: 10px;
     }
+
     .carbutton {
         display: flex;
         -webkit-box-align: center;
@@ -673,6 +911,7 @@ body{
         margin-top: 15px;
     }
 }
+
 @media only screen and (min-width:"821px") and (max-width:"1024px") {
     .carsearchbox {
         width: 280px;
@@ -682,7 +921,7 @@ body{
         background: rgb(255, 255, 255);
         cursor: pointer;
         position: relative;
-    
+
         p {
             background-color: #fff;
             margin-top: -12px;
@@ -696,15 +935,15 @@ body{
             color: rgba(107, 103, 103, 0.663);
             position: absolute;
             text-align: center;
-    
+
         }
-    
+
         input {
             width: 100%;
             height: 55px;
             border: none;
             background: rgb(255, 255, 255);
-            font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-family: Roboto, Quicksand, Avenir, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             color: rgb(4, 4, 4);
             border: none;
             outline: none;
@@ -715,134 +954,14 @@ body{
             padding: 19px 35px;
             font-weight: 700;
         }
-    
+
         input::placeholder {
-            color:rgba(36, 35, 35, 0.488);
+            color: rgba(36, 35, 35, 0.488);
             opacity: 1;
-          }
-    }
-    .roundcarsearchbox{
-        width:210px;
-    }
-}
-@media only screen and (min-width:"410px") and (max-width:"450px") {
-
-    .cartripselection{
-        display: flex;
-        flex-direction: column;
-    }
-   .caricon{
-    display: none !important;
-   }
-   .carmain{
-    flex-wrap: wrap;
-   }
-   .carsearchbox {
-    width: auto;
-    border: 2.5px solid #dfdfdf;
-    border-radius: 8px;
-    height: 60px;
-    background: rgb(255, 255, 255);
-    cursor: pointer;
-    position: relative;
-
-    p {
-        background-color: #fff;
-        margin-top: -12px;
-        margin-bottom: 0%;
-        width: 38px;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgba(107, 103, 103, 0.663);
-        position: absolute;
-        text-align: center;
-
+        }
     }
 
-    input {
-        width: 100%;
-        height: 55px;
-        border: none;
-        background: rgb(255, 255, 255);
-        font-family: Roboto,Quicksand, Avenir, -apple-system, "Segoe UI",  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        color: rgb(4, 4, 4);
-        border: none;
-        outline: none;
-        border-radius: 8px;
-        outline: 0px;
-        font-size: 16px;
-        // line-height: 28px;
-        padding: 19px 35px;
-        font-weight: 700;
+    .roundcarsearchbox {
+        width: 210px;
     }
-
-    input::placeholder {
-        color:rgba(36, 35, 35, 0.488);
-        opacity: 1;
-      }
-}
-.dateselections {
-    height: 60px;
-    width: 255px;
-    margin-left: 15px;
-    border-radius: 8px;
-    // padding:" 0px 20px",
-    border: 2.5px solid #dfdfdf;
-    cursor: pointer;
-    color: #242222;
-    font-size: 17px;
-    padding-bottom: -115px;
-
-
-    p {
-        background-color: #fff;
-        margin-top: -12px;
-        margin-bottom: 0%;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgb(119, 119, 119);
-        position: absolute;
-    }
-}
-.flightcontent{
-    padding-left: 5px;
-    flex-wrap: wrap;
-    margin-top:10px !important;
-    
-}
-
-.rounddateselections {
-    height: 60px;
-    width: 210px;
-    margin-left: 10px;
-    border-radius: 8px;
-    // padding:" 0px 20px",
-    border: 2.5px solid #dfdfdf;
-    cursor: pointer;
-    color: #242222ae;
-    font-size: 17px;
-    padding-bottom: -115px;
-    margin-top: 15px !important;
-
-
-    p {
-        background-color: #fff;
-        margin-top: -14px;
-        margin-bottom: 0%;
-        margin-left: 22px;
-        font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-size: 14px;
-        display: inline-flex;
-        font-weight: 700;
-        color: rgba(119, 119, 119, 0.616);
-        position: absolute;
-    }
-}
-
 }
