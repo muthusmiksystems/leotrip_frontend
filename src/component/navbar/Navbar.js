@@ -125,9 +125,9 @@ const CustomNavbar = ({ isSticky,onhandle }) => {
           </div>
           <div className="mb-2">
             <div className="register" onClick={() => setModalShow(true)}>
-              <FontAwesomeIcon icon={faUserCircle} style={{ fontSize: "25px", color: "#3B77DC" }} />
-              <a className="ms-2 mb-0  fw-bold mt-1" style={{ fontSize: "10px" }}>LOGIN<span style={{ color: "#3B77DC" }}> / </span><span style={{ color: "#3B77DC" }}>SIGNUP</span></a>
-              <i class="fa fa-chevron-down" aria-hidden="true" style={{ color: "#3B77DC", marginTop: "8px", marginLeft: "5px", fontSize: "10px" }}></i>
+              <FontAwesomeIcon icon={faUserCircle} style={{ fontSize: "25px", color: "#c96e30" }} />
+              <a className="ms-2 mb-0  fw-bold mt-1" style={{ fontSize: "10px", color: "#c96e30" }}>LOGIN<span style={{ color: "#c96e30" }}> / </span><span style={{ color: "#c96e30" }}>SIGNUP</span></a>
+              <i class="fa fa-chevron-down" aria-hidden="true" style={{ color: "#c96e30", marginTop: "8px", marginLeft: "5px", fontSize: "10px" }}></i>
               <Login
                 show={modalShow}
                 ModalSetter={setModalShow}

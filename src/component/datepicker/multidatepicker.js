@@ -76,8 +76,8 @@ export default function MultiDatePickers({ onSelect, Searchstyle, required, sele
           </div>
 
           <div className='nights d-flex justify-content-center my-2 '>
-            <div className='mt-1'>
-            <Badge className='nights_badge mt-1 py-1' bg="success" >{nights} &nbsp;nights</Badge>
+            <div className='mt-2'>
+            <Badge className='nights_badge mt-2 py-1' bg="success" >{nights} &nbsp;nights</Badge>
             </div>
           </div>
           <div className='col daterange'>

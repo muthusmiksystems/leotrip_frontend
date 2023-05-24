@@ -282,18 +282,16 @@ const Login = (props) => {
                     size="lg"
                     aria-labelledby="contained-modal-title-vcenter"
                     centered
-
                 >
-
                     <Modal.Body>
 
                         <div className='row modalcontainer'>
                             <div className='col-md-6 logintheme'>
                                 <h3 className='benefitsList'>comfy <span className='fs-3'>stays</span></h3>
                                 <ul className="fa-ul benefitsListItem ps-5">
-                                    <li><span class="fa-li"><FontAwesomeIcon icon={faCircleCheck} className="text-primary" /></span>Save traveler details</li>
-                                    <li><span class="fa-li"><FontAwesomeIcon icon={faCircleCheck} className="text-primary" /></span>Manage and modify bookings</li>
-                                    <li><span class="fa-li"><FontAwesomeIcon icon={faCircleCheck} className="text-primary" /></span>Hassle-free web check-in</li>
+                                    <li><span class="fa-li"><FontAwesomeIcon icon={faCircleCheck} className="icolor" /></span>Save traveler details</li>
+                                    <li><span class="fa-li"><FontAwesomeIcon icon={faCircleCheck} className="icolor" /></span>Manage and modify bookings</li>
+                                    <li><span class="fa-li"><FontAwesomeIcon icon={faCircleCheck} className="icolor" /></span>Hassle-free web check-in</li>
                                 </ul>
                             </div>
                             {showPage && (<div className='col-md-6 loginposition'>
@@ -312,7 +310,7 @@ const Login = (props) => {
                                             <Form.Group className="mb-3 fw-bold" onChange={handleChangeNumber} >
                                                 <Form.Label className='mt-2'>Mobile Number</Form.Label>
                                                 <Form.Control
-                                                    type="text"
+                                                    type="number"
                                                     placeholder="Mobile Number"
                                                     pattern="[0-9]{10}"
                                                 />
@@ -320,7 +318,7 @@ const Login = (props) => {
                                             <small className="font-weight-bold text-danger mt-2">{errormsg}</small>
 
                                             <div className="d-grid gap-2">
-                                                <Button onClick={(e) => onSignInSubmit(e)} >Continue</Button>
+                                                <Button className='continue' onClick={(e) => onSignInSubmit(e)} >Continue</Button>
                                             </div>
                                         </Form>
                                     </div >

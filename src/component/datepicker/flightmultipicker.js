@@ -75,13 +75,13 @@ export default function MultiDatePickers({ onSelect, Searchstyle, required, sele
     <div className='headerSearchItem mt-4'>
       <div onClick={handleClick} className={Searchstyle}>
         <div className='row d-inline-flex content'>
-          <div className=' flight-daterange'>
-            <p className='mb-0 text-left' style={style2}><FontAwesomeIcon icon={faCalendarDays} className=" text-muted me-1 mt-1 bg-white" />Departure</p>
-            <div className='my-3 text-center  ms-0' style={style3}>{`${departure}`}</div>
+          <div className=' flight-daterange ms-4'>
+            <p className='mb-0 text-left' style={style2}><FontAwesomeIcon icon={faCalendarDays} className=" text-muted mt-1 bg-white" />&nbsp;Departure</p>
+            <div className='my-3 text-center' style={style3}>{`${departure}`}</div>
           </div>
-          <div className='flight-daterange'>
-            <p className='mb-0 text-left' style={style2}><FontAwesomeIcon icon={faCalendarDays} className="text-left text-muted me-1 mt-1 bg-white" />Return</p>
-            <div className='my-3 text-center ms-1'  style={style3}>{`${returndate}`}</div>
+          <div className='flight-daterange me-2'>
+            <p className='mb-0 text-left' style={style2}><FontAwesomeIcon icon={faCalendarDays} className="text-left text-muted mt-1 bg-white" />&nbsp;Return</p>
+            <div className='my-3 text-center'  style={style3}>{`${returndate}`}</div>
           </div>
         </div>
       </div>

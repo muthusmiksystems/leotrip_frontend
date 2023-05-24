@@ -1,11 +1,11 @@
-.modalcontainer{
+.modalcontainer {
     border-radius: 25px !important;
 }
 
 
-.logintheme{
+.logintheme {
     background-image: url('../../asset/images/login/kind.png');
-   background-size: 130%;
+    background-size: 130%;
     background-repeat: no-repeat;
     background-position: bottom;
     background-position-x: -35px;
@@ -20,21 +20,27 @@
     text-transform: capitalize;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    
+
+}
+
+.icolor {
+    color: #c96e30;
+    font-size: 23px;
 }
 
 .benefitsListItem {
     color: rgb(20, 24, 35);
-    li{
+
+    li {
         color: rgb(20, 24, 35);
         font: 400 1.2rem / 1.33 "Helvetica Neue", Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
     }
 }
 
-.loginPage{
+.loginPage {
     z-index: 2;
-    position:absolute;
+    position: absolute;
     background-image: url('../../asset/images/login/loginbg.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -46,39 +52,40 @@
 }
 
 
-.loginposition{
+.loginposition {
     z-index: 1;
-    position:relative;
+    position: relative;
 }
 
-.bgtheme{
+.bgtheme {
     margin-top: 40px;
     height: 160px;
     background-image: url('../../asset/images/backgroundimage.png');
 }
 
-.profilePage{
+.profilePage {
     z-index: 1;
-    position:relative;
+    position: relative;
     top: -50px;
     width: 60%
 }
 
 
-  .imageuploader{
+.imageuploader {
     border: 10px solid #00a850;
     height: 200px;
     width: 200px;
     margin: 20px;
     position: relative;
     border-radius: 50%;
-    cursor: pointer; 
+    cursor: pointer;
     background-image: url('../../asset/images/login/img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 10px;
     overflow: hidden;
-    img{
+
+    img {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -87,207 +94,268 @@
         object-fit: cover;
 
     }
-  }
-  button{
-    background-color: "orangered"; border: "orangered"
-  }
+}
 
-.logoutbg{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+    background-color: "orangered";
+    border: "orangered"
+}
+
+.continue {
+    background-color: #e69952;
+    border: #e69952;
+}
+
+.continue:hover {
+    background-color: #c96e30;
+    border: #c96e30;
+}
+
+.logoutbg {
     background-color: "#AFE1AF"
 }
-  .logoutbuttons{
-    background-color: "orangered" !important; 
-    border: "orangered" !important;
-     width: "70px";
 
-  }
-  @media only screen and (min-width:"950px") and (max-width:"1024px"){
-    .triphead{
-        width:53.33%!important;
+.logoutbuttons {
+    background-color: "orangered" !important;
+    border: "orangered" !important;
+    width: "70px";
+
+}
+
+@media only screen and (min-width:"950px") and (max-width:"1024px") {
+    .triphead {
+        width: 53.33% !important;
     }
-    .triprow{
+
+    .triprow {
         margin-top: 50px;
     }
-    
-  }
-  @media only screen and (min-width:"760px") and (max-width:"820px"){
-    .triphead{
-        width:55.33%!important;
+
+}
+
+@media only screen and (min-width:"760px") and (max-width:"820px") {
+    .triphead {
+        width: 55.33% !important;
     }
-    .bgtheme{
+
+    .bgtheme {
         margin-top: 60px;
         height: 160px;
         background-image: url('../../asset/images/backgroundimage.png');
     }
-    .bgthemepera{
+
+    .bgthemepera {
         display: flex;
         height: 150px;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
-    .triptabs{
-       flex-direction: column;
-       margin-bottom: 50px;
-       margin-top: 100px;       
-    }   
-    .triprow{
+
+    .triptabs {
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+
+    .triprow {
         margin-top: 50px;
     }
-    
-  }
-  @media only screen and (min-width:"360px") and (max-width:"399px") {
-    .bgtheme{
+
+}
+
+@media only screen and (min-width:"360px") and (max-width:"399px") {
+    .bgtheme {
         margin-top: 20px;
         height: 100px;
         background-image: url('../../asset/images/backgroundimage.png');
     }
-    .profilePage{
+
+    .profilePage {
         z-index: 1;
-        position:relative;
-        top:0px;
+        position: relative;
+        top: 0px;
         width: 60%
     }
-    .bgthemepera{
+
+    .bgthemepera {
         display: flex;
         height: 100px;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
-    .tripimage{
+
+    .tripimage {
         width: 230px;
         padding: 20px;
     }
-    .tripcontent{
-        width:230px;
+
+    .tripcontent {
+        width: 230px;
         text-align: center;
-        margin-bottom:20px;
-    }
-    .triptabs{
-        margin-top: 20px;
-    }
-    .triprow{
         margin-bottom: 20px;
     }
-    
-  }
-  @media only screen and (min-width:"410px") and (max-width:"420px") {
-    .bgtheme{
+
+    .triptabs {
+        margin-top: 20px;
+    }
+
+    .triprow {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (min-width:"410px") and (max-width:"420px") {
+    .bgtheme {
         margin-top: 20px;
         height: 100px;
         background-image: url('../../asset/images/backgroundimage.png');
     }
-    .profilePage{
+
+    .profilePage {
         z-index: 1;
-        position:relative;
-        top:0px;
+        position: relative;
+        top: 0px;
         width: 60%
     }
-    .bgthemepera{
+
+    .bgthemepera {
         display: flex;
         height: 100px;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
-    .tripimage{
+
+    .tripimage {
         width: 230px;
         padding: 20px;
     }
-    .tripcontent{
-        width:250px;
+
+    .tripcontent {
+        width: 250px;
         text-align: center;
         margin-bottom: 20px;
     }
-    .triptabs{
+
+    .triptabs {
         margin-top: 20px;
     }
-  }
-  @media only screen and (min-width:"275px") and (max-width:"350px") {
-    .bgtheme{
+}
+
+@media only screen and (min-width:"275px") and (max-width:"350px") {
+    .bgtheme {
         margin-top: 20px;
         height: 100px;
         background-image: url('../../asset/images/backgroundimage.png');
     }
-    .profilePage{
+
+    .profilePage {
         z-index: 1;
-        position:relative;
-        top:0px;
+        position: relative;
+        top: 0px;
         width: 60%
     }
-    .bgthemepera{
+
+    .bgthemepera {
         display: flex;
         height: 100px;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
-    .tripimage{
+
+    .tripimage {
         width: 260px;
         padding: 20px;
     }
-    .tripcontent{
-        width:260px;
+
+    .tripcontent {
+        width: 260px;
         text-align: center;
         margin-bottom: 20px;
     }
-    .triprow{
-        width:260px;
+
+    .triprow {
+        width: 260px;
         margin-left: -50px;
-        margin-bottom:20px;
+        margin-bottom: 20px;
     }
-  }
-  @media only screen and (min-width:"525px") and (max-width:"550px") {
-    .bgtheme{
+}
+
+@media only screen and (min-width:"525px") and (max-width:"550px") {
+    .bgtheme {
         margin-top: 60px;
         height: 100px;
         background-image: url('../../asset/images/backgroundimage.png');
     }
-    .profilePage{
+
+    .profilePage {
         z-index: 1;
-        position:relative;
-        top:0px;
+        position: relative;
+        top: 0px;
         width: 60%
     }
-    .bgthemepera{
+
+    .bgthemepera {
         display: flex;
         height: 100px;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
-    .tripimage{
+
+    .tripimage {
         width: 260px;
         padding: 20px;
     }
-    .tripcontent{
-        width:100%;
+
+    .tripcontent {
+        width: 100%;
         text-align: center;
         margin-bottom: 20px;
     }
-    .triprow{
-        width:100%;
-        margin-bottom:20px;
+
+    .triprow {
+        width: 100%;
+        margin-bottom: 20px;
         margin-left: 10px;
     }
-    .triphead{
+
+    .triphead {
         width: 100%;
     }
-  }
-  @media only screen and (min-width:"900px") and (max-width:"945px") {
-    .triphead{
-        width:55.33%!important;
+}
+
+@media only screen and (min-width:"900px") and (max-width:"945px") {
+    .triphead {
+        width: 55.33% !important;
     }
-    .bgtheme{
+
+    .bgtheme {
         margin-top: 20px;
         height: 160px;
         background-image: url('../../asset/images/backgroundimage.png');
     }
-    .bgthemepera{
+
+    .bgthemepera {
         display: flex;
         height: 150px;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
-    .triptabs{
-       flex-direction: column;
-       margin-bottom: 50px;
-       margin-top: 80px;       
-    }  
-  }
+
+    .triptabs {
+        flex-direction: column;
+        margin-bottom: 50px;
+        margin-top: 80px;
+    }
+}

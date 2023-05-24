@@ -51,8 +51,8 @@ const RoundTrip = () => {
         }
         else {
             setErrormsg('')
-            console.log("options",options);
-            history.push("/flight/flightlist-roundtrip",{state:options})
+            console.log("options", options);
+            history.push("/flight/flightlist-roundtrip", { state: options })
 
             const flightSearchList = {
                 "EndUserIp": "107.180.105.183",
@@ -167,7 +167,7 @@ const RoundTrip = () => {
         setReturnSelection(day)
         console.log("jk-paper", day)
     };
-    
+
     useEffect(() => {
         // set current date on component load
         setReturnDate(moment(new Date()).add(1, 'day').format('MMM DD, yyyy'));
@@ -263,32 +263,32 @@ const RoundTrip = () => {
     return (
         <>
             <div className='d-inline-flex flex-wrap content'>
-                
-                    <div className="search-area mt-4">
-                        <p className='w-auto bg-white '>From</p>
-                        <AutoSuggest
-                            suggestions={suggestions}
-                            onSuggestionsFetchRequested={({ value }) => {
-                                setValueDes(value);
-                                // console.log("I am selected in ...............................",value)
-                                setSuggestions(getSuggestions(valueDes));
-                            }}
-                            onSuggestionSelected={(_, suggestionValue) => { handleSelection(suggestionValue) }}
-                            getSuggestionValue={suggestion => suggestion.airport_city_name}
-                            renderSuggestion={suggestion => <span className="suggesstionList">{suggestion.airport_city_name} ({suggestion.airport_name})</span>}
-                            inputProps={{
-                                placeholder: "Enter city or airport",
-                                value: valueDes,
 
-                                onChange: (_, { newValue, method }) => {
-                                    setValueDes(newValue);
-                                    //    console.log("newValue",newValue)
-                                }
-                            }}
-                            highlightFirstSuggestion={true}
-                        />
-                    </div>
-                
+                <div className="search-area mt-4">
+                    <p className='w-auto bg-white '>From</p>
+                    <AutoSuggest
+                        suggestions={suggestions}
+                        onSuggestionsFetchRequested={({ value }) => {
+                            setValueDes(value);
+                            // console.log("I am selected in ...............................",value)
+                            setSuggestions(getSuggestions(valueDes));
+                        }}
+                        onSuggestionSelected={(_, suggestionValue) => { handleSelection(suggestionValue) }}
+                        getSuggestionValue={suggestion => suggestion.airport_city_name}
+                        renderSuggestion={suggestion => <span className="suggesstionList">{suggestion.airport_city_name} ({suggestion.airport_name})</span>}
+                        inputProps={{
+                            placeholder: "Enter city or airport",
+                            value: valueDes,
+
+                            onChange: (_, { newValue, method }) => {
+                                setValueDes(newValue);
+                                //    console.log("newValue",newValue)
+                            }
+                        }}
+                        highlightFirstSuggestion={true}
+                    />
+                </div>
+
                 <div className='icon justify-content-center'>
                     <FontAwesomeIcon icon={faArrowRightArrowLeft} onClick={() => switchText(fromaddress, toaddress)} style={{ fontSize: "20px", color: "green" }} />
                 </div>
@@ -355,7 +355,7 @@ const RoundTrip = () => {
                     <div className="headerSearchItem">
                         <div
                             onClick={() => setOpen(true)}
-                            className="w-100 mt-1 text-center" style={{ height: "60px"}}>
+                            className="w-100 mt-1 text-center" style={{ height: "60px" }}>
                             <span className="headerSearchText">&nbsp;&nbsp;&nbsp;{`${options.adult} adult · ${options.children} children · ${options.Infants} Infants Travel Class: ${triptype.className}`}</span>
                         </div>
                         {open && (

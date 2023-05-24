@@ -220,7 +220,7 @@ const Hotels = () => {
                                 <h2 className='text-white text-center'>Book Hotels & Homestays</h2>
                                 <div className='searchcontainer mt-3 mx-auto'>
                                     <h6 className="fw-bold headingcolor h5">Book Your Rooms With Best Deals</h6>
-                                    <div className=' d-inline-flex content content1 hotelcontent mb-3 mt-5'style={{height:"100px"}}>
+                                    <div className=' d-inline-flex content content1 hotelcontent mt-3'style={{height:"80px"}}>
                                         <div className='hotelsearchbox mt-2'>
                                             <p className='bg-white w-auto'>Destination</p>
                                             <AutoSuggest

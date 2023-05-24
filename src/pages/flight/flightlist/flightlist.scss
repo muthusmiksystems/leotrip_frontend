@@ -510,10 +510,10 @@
 
     .flight-daterange {
         height: 60px;
-        width: 150px;
-        margin: 0px 0px 0px 15px;
+        width: 140px;
+        margin: 10px 0px 0px 15px;
         border-radius: 8px;
-        border: 2.5px solid #dfdfdf;
+        border: 2.5px solid #dfdfdf;//#dfdfdf
         cursor: pointer;
         color: #625f5f;
         font-size: 17px;
@@ -522,13 +522,14 @@
         p {
             margin-top: -12px;
             margin-bottom: 0%;
-            margin-left: 22px;
+            margin-left: 5px;
             font-family: Quicksand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             font-size: 14px;
             display: inline-flex;
             font-weight: 700;
             color: rgb(134, 131, 131);
             position: absolute;
+            padding: 0 8px 0 8px;
         }
     }
     .flight-daterange:hover {
