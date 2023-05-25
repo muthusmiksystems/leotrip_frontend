@@ -66,7 +66,7 @@ const Offers = () => {
     return (
         <>
             <Card className="container hojoyoffers-Label cardrad">
-                <p className="fw-bold text-center mt-3">Offers For You</p>
+                <p className="fw-bold text-center mt-3 text-white Offu">Offers For You</p>
                 <Card.Header className="">
                     <Row className="text-end">
                         <Col >

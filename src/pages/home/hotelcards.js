@@ -64,7 +64,7 @@ const SimilarHotels = () => {
 
     return (
         <>
-            <Card className="container mt-5 Hojoyhotelcards   cardrad" >
+            <Card className="container mt-5 Hojoyhotelcards1   cardrad" >
               
                     <h5 className="fw-bold text-center mt-3">Nearby Hotels</h5>
               

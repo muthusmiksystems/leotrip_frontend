@@ -313,18 +313,18 @@
 
 
 .hojoyoffers-Label {
-  margin-top: 100px !important;
+  margin-top: -90px !important;
   min-height: 450px;
   height: 530px;
   background: url('../../asset/images/new bg6.png');
+  background-size: 100% 100%;
 
   p {
-    // font-family: 'Roboto', sans-serif;
-    // font-family:QuickSand, Avenir, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
-    font-size: 22px;
+    font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
-
+    word-spacing: 5px;
+    letter-spacing: 1px;
   }
 
   h4 {
@@ -373,6 +373,7 @@
   height: 265px !important;
   margin-bottom: 15px;
   padding: 16px;
+  padding-right: 18px;
   margin-top: 15px;
   border: 0.5px solid rgb(185, 189, 186) !important;
   min-height: 200px;
@@ -382,6 +383,7 @@
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  
 
   h4 {
     font-size: 15px;
@@ -411,9 +413,9 @@
   padding: 10px;
   border: 0.5px solid rgb(185, 189, 186) !important;
   min-height: 200px;
-  -moz-box-shadow: 10px 10px 15px #ccc;
-  -webkit-box-shadow: 10px 10px 15px #ccc;
-  box-shadow: 10px 10px 15px #ccc;
+  // -moz-box-shadow: 10px 10px 15px #ccc;
+  // -webkit-box-shadow: 10px 10px 15px #ccc;
+  // box-shadow: 10px 10px 15px #ccc;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   font-family: 'Roboto', sans-serif;
@@ -499,7 +501,7 @@
 
 
 .headerdeals {
-  background: linear-gradient(186.44deg, rgb(179, 183, 255) 10.03%, rgb(255, 237, 230) 91.57%, rgb(255, 255, 255) 277.6%);
+  // background: linear-gradient(186.44deg, rgb(179, 183, 255) 10.03%, rgb(255, 237, 230) 91.57%, rgb(255, 255, 255) 277.6%);
   // background: url('../../asset/images/bg4.png');
   height: 120px;
   border-radius: 20px 20px 0px 0px;
@@ -509,7 +511,14 @@
 }
 
 .Hojoyhotelcards {
-  background: url('../../asset/images/new bg6.png');
+  width: 99.5%;
+}
+
+.Hojoyhotelcards1 {
+  background: url('../../asset/images/new\ bg6.png');
+  background-size: 100% 100%;
+  border-radius: 10px;
+
 
 }
 
@@ -519,9 +528,10 @@
 }
 
 .tabsDeals {
-  background-color: rgb(255, 255, 255) !important;
+  background-color: #e6b17f !important;
   margin-top: -40px !important;
 }
+
 
 .dealsTab {
   margin-left: -53px;
@@ -580,6 +590,7 @@
     margin-top: 290px !important;
     min-height: 450px;
     background: url('../../asset/images/new\ bg6.png');
+    background-size: 100% 100%;
 
     p {
       // font-family: 'Roboto', sans-serif;
@@ -904,6 +915,7 @@
     margin-top: 250px !important;
     min-height: 450px;
     background: url('../../asset/images/new\ bg6.png');
+    background-size: 100% 100%;
 
     p {
       // font-family: 'Roboto', sans-serif;

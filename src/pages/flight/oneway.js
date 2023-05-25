@@ -37,9 +37,8 @@ const OneWay = () => {
     /* # Error Handle */
     const [errormsg, setErrormsg, setIsActive] = useState('');
 
-
-
     const handleSubmit = () => {
+
         if (fromaddress == '') {
             setErrormsg('Please Enter the Valid Location !');
         }
@@ -354,11 +353,12 @@ const OneWay = () => {
                     </div>
                 </div>
                 <div className='text-center'>
-                    {(fromaddress === '' || toaddress === '' || ((fromaddress.suggestion.airport_code).localeCompare(toaddress.suggestion.airport_code) === 0)) ? <h6 className="font-weight-bold text-danger mt-2 errmsg">{errormsg}</h6> : null}
+                    {(fromaddress === '' || toaddress === '' || ((fromaddress.suggestion.airport_code).localeCompare(toaddress.suggestion.airport_code) === 0)) ? <h6 className="font-weight-bold text-danger mt-2">{errormsg}</h6> : null}
                 </div>
                 <div className='flightbuttononeway'>
                     <CustomButton customstyle='flightbtnsearch' onClick={() => handleSubmit()} value='SEARCH FLIGHTS'></CustomButton>
                 </div>
+
             </>
         </>
     )
