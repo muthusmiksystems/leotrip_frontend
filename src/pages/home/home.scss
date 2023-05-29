@@ -383,7 +383,7 @@
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  
+
 
   h4 {
     font-size: 15px;
@@ -479,6 +479,18 @@
   margin-left: -33px;
 }
 
+
+.slidebutton3 {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  color: blue;
+  margin-top: -15px;
+  margin-left: -33px;
+}
+
 .slidebutton:hover {
   height: 63px !important;
   width: 63px !important;
@@ -498,7 +510,57 @@
   color: blue;
   z-index: 3;
 }
+.slidebutton2{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  color: blue;
+  margin-top: -15px;
+  margin-left: -35px;
+}
 
+.slidebutton22{
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  color: blue;
+  margin-top: -15px;
+  margin-left: -23px;
+}
+
+.leftcoldeals2{
+  left: 27px;
+  margin-top: -15px;
+  position: relative;
+  color: blue;
+  z-index: 3;
+}
+.rightcoldeals2{
+  left: 25px;
+  margin-top: -15px;
+  position: relative;
+  color: blue;
+  z-index: 3;
+}
+
+.rightcoldeals3 {
+  left: 5px;
+  margin-top: -15px;
+  position: relative;
+  color: blue;
+  z-index: 3;
+}
+.leftcoldeals3{
+  left: 27px;
+  margin-top: -15px;
+  position: relative;
+  color: blue;
+  z-index: 3;
+}
 
 .headerdeals {
   // background: linear-gradient(186.44deg, rgb(179, 183, 255) 10.03%, rgb(255, 237, 230) 91.57%, rgb(255, 255, 255) 277.6%);

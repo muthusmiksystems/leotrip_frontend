@@ -66,11 +66,11 @@ const SimilarHotels = () => {
         <>
             <Card className="container mt-5 Hojoyhotelcards1   cardrad" >
               
-                    <h5 className="fw-bold text-center mt-3">Nearby Hotels</h5>
+                    <h4 className="fw-bold text-center mt-3 text-white">Nearby Hotels</h4>
               
                 <Card.Body className="dealsTab">
                     <Row>
-                        <Col className="my-auto">
+                        <Col className="my-auto leftcoldeals3">
                             <Button variant="light" size="lg" onClick={SliderRef?.slickPrev} className="slidebutton rounded-circle">
                                 <FontAwesomeIcon icon={faArrowLeftLong} />
                             </Button>
@@ -197,8 +197,8 @@ const SimilarHotels = () => {
                                 </Slider>
                             </div>
                         </Col>
-                        <Col className="my-auto rightcoldeals ">
-                            <Button variant="light" size="lg" onClick={SliderRef?.slickNext} className="slidebutton rounded-circle">
+                        <Col className="my-auto rightcoldeals3 ">
+                            <Button variant="light" size="lg" onClick={SliderRef?.slickNext} className="slidebutton3 rounded-circle">
                                 <FontAwesomeIcon icon={faArrowRightLong} />
                             </Button>
                         </Col>

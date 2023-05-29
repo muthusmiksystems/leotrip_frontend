@@ -132,8 +132,8 @@ const Deals = () => {
                     >
                         <Tab eventKey="hotel" title="Hotel" className="dealsTab" tabClassName="rounded-pill dealstabActive">
                             <Row>
-                                <Col className="my-auto">
-                                    <Button variant="light" size="lg " onClick={SliderReference?.slickPrev} className="slidebutton rounded-circle">
+                                <Col className="my-auto leftcoldeals2">
+                                    <Button variant="light" size="lg " onClick={SliderReference?.slickPrev} className="slidebutton2 rounded-circle">
                                         <FontAwesomeIcon className="slidebtn" icon={faArrowLeftLong} />
                                     </Button>
                                 </Col>
@@ -163,8 +163,8 @@ const Deals = () => {
                                         </Slider>
                                     </div>
                                 </Col>
-                                <Col className="my-auto rightcoldeals ">
-                                    <Button variant="light" size="lg" onClick={SliderReference?.slickNext} className="slidebutton rounded-circle">
+                                <Col className="my-auto">
+                                    <Button variant="light" size="lg" onClick={SliderReference?.slickNext} className="slidebutton22 rounded-circle">
                                         <FontAwesomeIcon icon={faArrowRightLong} />
                                     </Button>
                                 </Col>
@@ -173,7 +173,7 @@ const Deals = () => {
                         <Tab eventKey="flight" title="Flight" className="dealsTab" tabClassName="rounded-pill dealstabActive">
                             <Row>
                                 <Col className="my-auto">
-                                    <Button variant="light" size="lg" onClick={SliderShow?.slickPrev} className="slidebutton rounded-circle">
+                                    <Button variant="light" size="lg" onClick={SliderShow?.slickPrev} className="slidebutton2 rounded-circle">
                                         <FontAwesomeIcon icon={faArrowLeftLong} />
                                     </Button>
                                 </Col>
@@ -210,8 +210,8 @@ const Deals = () => {
                                         </Slider>
                                     </div>
                                 </Col>
-                                <Col className="my-auto rightcoldeals ">
-                                    <Button variant="light" size="lg" onClick={SliderShow?.slickNext} className="slidebutton rounded-circle">
+                                <Col className="my-auto  ">
+                                    <Button variant="light" size="lg" onClick={SliderShow?.slickNext} className="slidebutton2 rounded-circle">
                                         <FontAwesomeIcon icon={faArrowRightLong} />
                                     </Button>
                                 </Col>

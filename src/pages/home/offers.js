@@ -75,7 +75,7 @@ const Offers = () => {
                                 <Tabs className="text-primary">
                                     <Tab eventKey="Bankoffer" title="All Offer" className="dealsTab">
                                         <Row>
-                                            <Col className="my-auto">
+                                            <Col className="my-auto ">
                                                 <Button variant="light" size="lg" onClick={SliderReference?.slickPrev} className="slidebutton rounded-circle">
                                                     <FontAwesomeIcon icon={faArrowLeftLong} />
                                                 </Button>

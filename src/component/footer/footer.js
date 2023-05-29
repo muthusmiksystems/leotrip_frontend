@@ -21,12 +21,12 @@ const Footer = () => {
             <div className="footer-bg">
                 <div className='container  text-muted'>
                     <div className='row'>
-                        <div className='col'>
-                            <h5 className='text-muted'>Call Us</h5>
-                            <p className='mb-0 ps-2 bor'>98491 44844 </p>
-                            <p className='mt-0 ps-2 bor'>93939 60999</p>
-                            <h5 className='text-muted bor1'>Email</h5>
-                            <p className='ps-2 bor'>hojoycomforts@gmail.com</p>
+                        <div className='col text-light'>
+                            <h5 className='h5'>Call Us</h5>
+                            <p className='mb-0 ps-2 bor a'>98491 44844 </p>
+                            <p className='mt-0 ps-2 bor a'>93939 60999</p>
+                            <h5 className='h5 bor1'>Email</h5>
+                            <p className='ps-2 bor a'>hojoycomforts@gmail.com</p>
                             {/* <div className='logo'>
                                 <h5 className='mb-0 text-muted'>Ho Joy Comforts</h5>
                                 <img src={Logo} alt="logo" className='ps-2' />
@@ -39,7 +39,7 @@ const Footer = () => {
                             </div> */}
                         </div>
                         <div className="col products ">
-                            <h5>Our Products</h5>
+                            <h5 className='h5'>Our Products</h5>
                             <ul className='ourlist text-muted'>
                                 <li> <NavLink to='/hotel'>Domestic Hotels</NavLink></li>
                                 <li><NavLink to='/flight'>International Flights</NavLink></li>
@@ -51,24 +51,24 @@ const Footer = () => {
                                 <li><NavLink to='/car'>Outstation Cabs Booking</NavLink></li>
                             </ul>
                         </div>
-                        <div className='col footer2'>
-                            <h5 className='text-muted'>Packages</h5>
+                        <div className='col footer2 text-light'>
+                            <h5 className='h5'>Packages</h5>
                             <ul>
-                                <li className='bor'>Goa</li>
-                                <li className='bor'>Kashmir</li>
-                                <li className='bor'>Andaman</li>
-                                <li className='bor'>Kerala</li>
-                                <li className='bor'>Lakshadweep</li>
-                                <li className='bor'>All Packages</li>
+                                <li className='bor a'>Goa</li>
+                                <li className='bor a'>Kashmir</li>
+                                <li className='bor a'>Andaman</li>
+                                <li className='bor a'>Kerala</li>
+                                <li className='bor a'>Lakshadweep</li>
+                                <li className='bor a'>All Packages</li>
                             </ul>
                         </div>
-                        <div className='col'>
-                            <h5 className='text-muted'>Support</h5>
+                        <div className='col text-light'>
+                            <h5 className='h5'>Support</h5>
                             <ul className='ms-1'>
-                                <li className='bor'><a onClick={() => { history.push('/aboutus') }}>About Us</a></li>
-                                <li className='bor'><a onClick={() => { history.push('/contactus') }}>Contact</a></li>
-                                <li className='bor'><a onClick={handlePolicy}>Privacy Policy</a></li>
-                                <li className='bor'><a onClick={() => { history.push('/termsandconditions') }}>Terms & Conditions</a> </li>
+                                <li className='bor a'><a onClick={() => { history.push('/aboutus') }}>About Us</a></li>
+                                <li className='bor a'><a onClick={() => { history.push('/contactus') }}>Contact</a></li>
+                                <li className='bor a'><a onClick={handlePolicy}>Privacy Policy</a></li>
+                                <li className='bor a'><a onClick={() => { history.push('/termsandconditions') }}>Terms & Conditions</a> </li>
                             </ul>
                         </div>
 
@@ -77,22 +77,22 @@ const Footer = () => {
                     <div className='row footermedia'>
                         <div className='col'>
                             <div className='logo'>
-                                <h5 className='mb-0 text-muted'>Ho Joy Comforts</h5>
+                                <h5 className='mb-0 h5'>Leo trip Comforts</h5>
                                 <img src={Logo} alt="logo" className='ps-2' />
                             </div>
 
                         </div>
                         <div className='col'>
 
-                            <h5 className='text-muted'>Follow Us</h5>
+                            <h5 className='h5'>Follow Us</h5>
                             <div className='footerlogo'>
-                            <img src={FaceBook} alt="facebook" className='ms-2 ' style={{ height: "30px", width: "30px", cursor: "pointer" }} />
-                            <img src={Instagram} alt="instagram" className='ms-2' style={{ height: "35px", width: "35px", cursor: "pointer" }} />
-                            <img src={Twitter} alt="twitter" className='ms-2' style={{ height: "30px", width: "30px", cursor: "pointer" }} />
+                            <img src={FaceBook} alt="facebook" className='ms-2 mt-1' style={{ height: "35px", width: "35px", cursor: "pointer" }} />
+                            <img src={Instagram} alt="instagram" className='ms-2' style={{ height: "40px", width: "40px", cursor: "pointer" }} />
+                            <img src={Twitter} alt="twitter" className='ms-2 mt-1' style={{ height: "35px", width: "35px", cursor: "pointer" }} />
                             </div>
                         </div>
                         <div className='col footer1'>
-                            <h5 className='text-muted'>Pay Safely With Us</h5>
+                            <h5 className='h5'>Pay Safely With Us</h5>
                             {/* <p className='ms-2'>The payment is encrypted and transmitted securely with an SSL protocol.</p> */}
                             <img src={Visa} alt="visa" className='ms-1' style={{ height: "35px", width: "35px" }} />
                             <img src={MasterCard} alt="mastercard" className='ms-2' style={{ height: "35px", width: "35px" }} />
