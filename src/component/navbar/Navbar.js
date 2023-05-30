@@ -3,17 +3,34 @@ import { withRouter } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
 import '../navbar/navbar.scss';
-import Logo from '../../asset/images/logo.png';
+import bus from '../../asset/images/marqueebus.gif';
+import run from '../../asset/images/marqueerun.gif';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import Login from "../../pages/authentication/login";
 
 
-const CustomNavbar = ({ isSticky,onhandle }) => {
+const CustomNavbar = ({ isSticky, onhandle }) => {
 
   const [colorChange, setColorchange] = useState(false);
   const [modalShow, setModalShow] = React.useState(false);
   const [open, setOpen] = useState(false);
+  const [isScrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    if (window.pageYOffset > 0) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -25,7 +42,7 @@ const CustomNavbar = ({ isSticky,onhandle }) => {
   };
   window.addEventListener('scroll', changeNavbarColor);
 
-  
+
 
   const toggleShow = () => {
     setOpen(!open)
@@ -69,10 +86,11 @@ const CustomNavbar = ({ isSticky,onhandle }) => {
 
 
   return (
-    <div className={`navbar-wrapper ${isSticky || ''}`}>
+    <div className={`navbar-wrapper ${isSticky && isScrolled && 'header-scrolled sticky-top'}`}>
       <Navbar expand="lg" className={colorChange ? 'custom-navbarchange' : 'custom-navbar'}>
         <Navbar.Brand href="/flight">
-          <img src={Logo} alt="logo"/>
+          {/* <img src={Logo} alt="logo"/> */}
+          <div className="img"></div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
